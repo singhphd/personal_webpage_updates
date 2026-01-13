@@ -1,0 +1,26 @@
+[
+    {
+        "name": "personal_webpage",
+        "description": "My personal website built with Next.js and Tailwind.",
+        "url": "https://github.com/JValdivia23/personal_webpage",
+        "stars": 1,
+        "language": "TypeScript",
+        "languageColor": "#3178c6"
+    },
+    {
+        "name": "radar-tools",
+        "description": "Python tools for radar meteorology.",
+        "url": "https://github.com/JValdivia23/radar-tools",
+        "stars": 15,
+        "language": "Python",
+        "languageColor": "#3572A5"
+    },
+    {
+        "name": "cloud-microphysics",
+        "description": "Simulation code for cloud microphysics studies.",
+        "url": "https://github.com/JValdivia23/cloud-microphysics",
+        "stars": 8,
+        "language": "Jupyter Notebook",
+        "languageColor": "#DA5B0B"
+    }
+]

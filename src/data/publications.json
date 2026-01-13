@@ -1,0 +1,3206 @@
+[
+  {
+    "paperId": "196018918f5b9b3ac7f9ba1ae8c1db399e46d305",
+    "url": "https://www.semanticscholar.org/paper/196018918f5b9b3ac7f9ba1ae8c1db399e46d305",
+    "title": "Network-Realised Model Predictive Control Part I: NRF-Enabled Closed-loop Decomposition",
+    "venue": "",
+    "year": 2025,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "2381359084",
+        "name": "Andrei Sperilua"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "2239013838",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "cb6c3f7f770519382fdbf271a55a84f83bbd00d5",
+    "url": "https://www.semanticscholar.org/paper/cb6c3f7f770519382fdbf271a55a84f83bbd00d5",
+    "title": "Network-Realised Model Predictive Control Part II: Distributed Constraint Management",
+    "venue": "",
+    "year": 2025,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2381359084",
+        "name": "Andrei Sperilua"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "2239013838",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "8f5183db0604b3ed694a414c60c3734e28c22362",
+    "url": "https://www.semanticscholar.org/paper/8f5183db0604b3ed694a414c60c3734e28c22362",
+    "title": "Certification of MPC-based zonal controller security properties using accuracy-aware machine learning proxies",
+    "venue": "Electric power systems research",
+    "year": 2024,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "2295986393",
+        "name": "Pierre Houdouin"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "0b04e326ded61a80f7a7aed07022e5f32825e03d",
+    "url": "https://www.semanticscholar.org/paper/0b04e326ded61a80f7a7aed07022e5f32825e03d",
+    "title": "Minimal Sparsity for Second-Order Moment-SOS Relaxations of the AC-OPF Problem",
+    "venue": "IEEE Transactions on Power Systems",
+    "year": 2023,
+    "citationCount": 6,
+    "authors": [
+      {
+        "authorId": "2124302851",
+        "name": "Adrien Le Franc"
+      },
+      {
+        "authorId": "1735055",
+        "name": "Victor Magron"
+      },
+      {
+        "authorId": "4141450",
+        "name": "J. Lasserre"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "2feefeeaf997fc507f307ca8fafea7f611be33e5",
+    "url": "https://www.semanticscholar.org/paper/2feefeeaf997fc507f307ca8fafea7f611be33e5",
+    "title": "Online Transfer Function Estimation and Control Design Using Ambient Synchrophasor Measurements",
+    "venue": "IEEE Transactions on Power Systems",
+    "year": 2023,
+    "citationCount": 7,
+    "authors": [
+      {
+        "authorId": "7925465",
+        "name": "M. Hatami"
+      },
+      {
+        "authorId": "8181030",
+        "name": "Kasra Koorehdavoudi"
+      },
+      {
+        "authorId": "2158039265",
+        "name": "Habib Wajid"
+      },
+      {
+        "authorId": "2143254",
+        "name": "V. Venkatasubramanian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "30189312",
+        "name": "F. Xavier"
+      },
+      {
+        "authorId": "1500523985",
+        "name": "Gilles Torresan"
+      }
+    ]
+  },
+  {
+    "paperId": "5b7378f706bc608cd6bb24d18a8307f7ec6fa96d",
+    "url": "https://www.semanticscholar.org/paper/5b7378f706bc608cd6bb24d18a8307f7ec6fa96d",
+    "title": "Dynamic Estimation-Based Protection and Hidden Failure Detection and Identification: Inverter-Dominated Power Systems",
+    "venue": "IEEE Power and Energy Magazine",
+    "year": 2023,
+    "citationCount": 5,
+    "authors": [
+      {
+        "authorId": "145834046",
+        "name": "S. Meliopoulos"
+      },
+      {
+        "authorId": "1725847",
+        "name": "G. Cokkinides"
+      },
+      {
+        "authorId": "40530246",
+        "name": "P. Myrda"
+      },
+      {
+        "authorId": "2406086",
+        "name": "E. Farantatos"
+      },
+      {
+        "authorId": "30775671",
+        "name": "R. Elmoudi"
+      },
+      {
+        "authorId": "2269370",
+        "name": "B. Fardanesh"
+      },
+      {
+        "authorId": "34849890",
+        "name": "G. Stefopoulos"
+      },
+      {
+        "authorId": "98177050",
+        "name": "Clifton Black"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "d3483dd209fcbb5219790fa868ec383e00febe1b",
+    "url": "https://www.semanticscholar.org/paper/d3483dd209fcbb5219790fa868ec383e00febe1b",
+    "title": "Graph Neural Networks for Voltage Stability Margins With Topology Flexibilities",
+    "venue": "IEEE Open Access Journal of Power and Energy",
+    "year": 2023,
+    "citationCount": 8,
+    "authors": [
+      {
+        "authorId": "2691522",
+        "name": "K. Guddanti"
+      },
+      {
+        "authorId": "2221471",
+        "name": "Yang Weng"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "df3a2f2361d2397a32917b3562a9d8c404fec9aa",
+    "url": "https://www.semanticscholar.org/paper/df3a2f2361d2397a32917b3562a9d8c404fec9aa",
+    "title": "Data-Based Predictive Control for Power Congestion Management in Subtransmission Grids Under Uncertainty",
+    "venue": "IEEE Transactions on Control Systems Technology",
+    "year": 2023,
+    "citationCount": 5,
+    "authors": [
+      {
+        "authorId": "151481766",
+        "name": "Nouha Dkhili"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "2224258211",
+        "name": "Guillaume Giraud"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      }
+    ]
+  },
+  {
+    "paperId": "e7725dad83abad165f51a71552adbeb3c30424f6",
+    "url": "https://www.semanticscholar.org/paper/e7725dad83abad165f51a71552adbeb3c30424f6",
+    "title": "Modeling of Digital Controllers in Electric Power System Dynamic Simulations",
+    "venue": "2023 IEEE Belgrade PowerTech",
+    "year": 2023,
+    "citationCount": 4,
+    "authors": [
+      {
+        "authorId": "2228349510",
+        "name": "Mehran Jafari"
+      },
+      {
+        "authorId": "2070385610",
+        "name": "Gautier Bureau"
+      },
+      {
+        "authorId": "121058597",
+        "name": "M. Chiaramello"
+      },
+      {
+        "authorId": "51230494",
+        "name": "A. Guironnet"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2835117",
+        "name": "P. Aristidou"
+      }
+    ]
+  },
+  {
+    "paperId": "eaf63a1ec7c8d4ab8de9541a16aa980e607c9fb1",
+    "url": "https://www.semanticscholar.org/paper/eaf63a1ec7c8d4ab8de9541a16aa980e607c9fb1",
+    "title": "Towards a safe maximisation of renewable’s flexibility in power transmission sub-grids: An MPC approach",
+    "venue": "European Control Conference",
+    "year": 2023,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "2223958007",
+        "name": "Guillaume Ganet–Lepage"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "169cbffed34798e5e62c33d6360923180e01ee13",
+    "url": "https://www.semanticscholar.org/paper/169cbffed34798e5e62c33d6360923180e01ee13",
+    "title": "Computational Methods for Nonlinear Analysis of Hopf Bifurcations in Power System Models",
+    "venue": "Electric power systems research",
+    "year": 2022,
+    "citationCount": 6,
+    "authors": [
+      {
+        "authorId": "46754978",
+        "name": "Yuan Zhi"
+      },
+      {
+        "authorId": "2158039265",
+        "name": "Habib Wajid"
+      },
+      {
+        "authorId": "2143254",
+        "name": "V. Venkatasubramanian"
+      },
+      {
+        "authorId": "3341684",
+        "name": "W. Ji"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "30189312",
+        "name": "F. Xavier"
+      },
+      {
+        "authorId": "2178772708",
+        "name": "Torresan Gilles"
+      }
+    ]
+  },
+  {
+    "paperId": "2b196b80829460ffbfcfba52619af6b9ca1a3d06",
+    "url": "https://www.semanticscholar.org/paper/2b196b80829460ffbfcfba52619af6b9ca1a3d06",
+    "title": "Nonlinearity handling in MPC for Power Congestion management in sub-transmission areas",
+    "venue": "IFAC-PapersOnLine",
+    "year": 2022,
+    "citationCount": 4,
+    "authors": [
+      {
+        "authorId": "3061135",
+        "name": "T. Pham"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      }
+    ]
+  },
+  {
+    "paperId": "75057aeca173138412a13c435a0af4f91efbbea1",
+    "url": "https://www.semanticscholar.org/paper/75057aeca173138412a13c435a0af4f91efbbea1",
+    "title": "Predictive control based on stochastic disturbance trajectories for congestion management in sub-transmission grids",
+    "venue": "IFAC-PapersOnLine",
+    "year": 2022,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "151481766",
+        "name": "Nouha Dkhili"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "8353c6040fe6e9b93c9d1f1d50ab3a1411276e6e",
+    "url": "https://www.semanticscholar.org/paper/8353c6040fe6e9b93c9d1f1d50ab3a1411276e6e",
+    "title": "Control of a battery energy storage system to compensate for ADN equivalents inaccuracies",
+    "venue": "Electric power systems research",
+    "year": 2022,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "bdd19cf980c75978979fd2d02690f3246ce2269e",
+    "url": "https://www.semanticscholar.org/paper/bdd19cf980c75978979fd2d02690f3246ce2269e",
+    "title": "Power grid segmentation for local topological controllers",
+    "venue": "Electric power systems research",
+    "year": 2022,
+    "citationCount": 6,
+    "authors": [
+      {
+        "authorId": "2184165522",
+        "name": "Noureddine Henka"
+      },
+      {
+        "authorId": "2389994770",
+        "name": "Quentin Francois"
+      },
+      {
+        "authorId": "52140516",
+        "name": "Sami Tazi"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "c0053efc56ce5cf79ba676335d7e2903f92ad0b8",
+    "url": "https://www.semanticscholar.org/paper/c0053efc56ce5cf79ba676335d7e2903f92ad0b8",
+    "title": "Advanced management of network overload in areas with Renewable Energies Sources",
+    "venue": "IFAC-PapersOnLine",
+    "year": 2022,
+    "citationCount": 4,
+    "authors": [
+      {
+        "authorId": "3061135",
+        "name": "T. Pham"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      }
+    ]
+  },
+  {
+    "paperId": "c11cf11abf80e7d2e7162c90471265f4e2a9d9b9",
+    "url": "https://www.semanticscholar.org/paper/c11cf11abf80e7d2e7162c90471265f4e2a9d9b9",
+    "title": "Online Feedback Optimization for Transmission Grid Operation",
+    "venue": "arXiv.org",
+    "year": 2022,
+    "citationCount": 5,
+    "authors": [
+      {
+        "authorId": "1381176424",
+        "name": "Lukas Ortmann"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2121967",
+        "name": "F. Dörfler"
+      },
+      {
+        "authorId": "35863503",
+        "name": "S. Bolognani"
+      }
+    ]
+  },
+  {
+    "paperId": "fd212ac070762e5bf020a7d349ef393891bee56d",
+    "url": "https://www.semanticscholar.org/paper/fd212ac070762e5bf020a7d349ef393891bee56d",
+    "title": "Subtransmission grid control via online feedback optimization",
+    "venue": "Applied Energy",
+    "year": 2022,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "1381176424",
+        "name": "Lukas Ortmann"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2121967",
+        "name": "F. Dörfler"
+      },
+      {
+        "authorId": "35863503",
+        "name": "S. Bolognani"
+      }
+    ]
+  },
+  {
+    "paperId": "0792f36f24753e1b6a63a3ec953744dfa1c7ce1e",
+    "url": "https://www.semanticscholar.org/paper/0792f36f24753e1b6a63a3ec953744dfa1c7ce1e",
+    "title": "Grid operation-based outage maintenance planning",
+    "venue": "",
+    "year": 2021,
+    "citationCount": 30,
+    "authors": [
+      {
+        "authorId": "83181027",
+        "name": "Guillaume Crognier"
+      },
+      {
+        "authorId": "68997100",
+        "name": "P. Tournebise"
+      },
+      {
+        "authorId": "152533620",
+        "name": "M. Ruiz"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "1bc4b6345f9500625e54d4314daa53ca1a3d650a",
+    "url": "https://www.semanticscholar.org/paper/1bc4b6345f9500625e54d4314daa53ca1a3d650a",
+    "title": "Modeling the Partial Renewable Power Curtailment for Transmission Network Management",
+    "venue": "2021 IEEE Madrid PowerTech",
+    "year": 2021,
+    "citationCount": 11,
+    "authors": [
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "102497891",
+        "name": "Duc-Trung Hoang"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      }
+    ]
+  },
+  {
+    "paperId": "1bd4f2f459a080e908974b74808ed8a68e2fa063",
+    "url": "https://www.semanticscholar.org/paper/1bd4f2f459a080e908974b74808ed8a68e2fa063",
+    "title": "Decision-making Oriented Clustering: Application to Pricing and Power Consumption Scheduling",
+    "venue": "arXiv.org",
+    "year": 2021,
+    "citationCount": 18,
+    "authors": [
+      {
+        "authorId": "50445382",
+        "name": "Chao Zhang"
+      },
+      {
+        "authorId": "1727608",
+        "name": "S. Lasaulce"
+      },
+      {
+        "authorId": "3246990",
+        "name": "Martin Hennebel"
+      },
+      {
+        "authorId": "66599763",
+        "name": "L. Saludjian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "145967056",
+        "name": "H. Poor"
+      }
+    ]
+  },
+  {
+    "paperId": "39be59635bb632f038f18619872388dddbc3a4a9",
+    "url": "https://www.semanticscholar.org/paper/39be59635bb632f038f18619872388dddbc3a4a9",
+    "title": "Predictive Control for Zonal Congestion Management of a Transmission Network",
+    "venue": "2021 29th Mediterranean Conference on Control and Automation (MED)",
+    "year": 2021,
+    "citationCount": 5,
+    "authors": [
+      {
+        "authorId": "102497891",
+        "name": "Duc-Trung Hoang"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      }
+    ]
+  },
+  {
+    "paperId": "3ee3cd39f965ea5382978b98f5f02a3f00ce28c6",
+    "url": "https://www.semanticscholar.org/paper/3ee3cd39f965ea5382978b98f5f02a3f00ce28c6",
+    "title": "A Novel Approach for the Calculation of Steady States in Transmission Systems Using Simplified Time-Domain Simulation",
+    "venue": "2021 IEEE Madrid PowerTech",
+    "year": 2021,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "41019459",
+        "name": "Quentin Cossart"
+      },
+      {
+        "authorId": "121058597",
+        "name": "M. Chiaramello"
+      },
+      {
+        "authorId": "51230494",
+        "name": "A. Guironnet"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "563bab0ef53cc3e69fb82a381b438c16af8470cf",
+    "url": "https://www.semanticscholar.org/paper/563bab0ef53cc3e69fb82a381b438c16af8470cf",
+    "title": "A Dynamic Equivalent of Active Distribution Network: Derivation, Update, Validation and Use Cases",
+    "venue": "IEEE Open Access Journal of Power and Energy",
+    "year": 2021,
+    "citationCount": 17,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "84492289",
+        "name": "G. Denis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "5ec3dd6d9de5456cb4462fefc36c244f5e72fb6b",
+    "url": "https://www.semanticscholar.org/paper/5ec3dd6d9de5456cb4462fefc36c244f5e72fb6b",
+    "title": "Power Congestion Management of a sub-Transmission Area Power Network using Partial Renewable Power Curtailment via MPC",
+    "venue": "IEEE Conference on Decision and Control",
+    "year": 2021,
+    "citationCount": 9,
+    "authors": [
+      {
+        "authorId": "102497891",
+        "name": "Duc-Trung Hoang"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "143881420",
+        "name": "A. Iovine"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1452691299",
+        "name": "Manuel Ruiz"
+      }
+    ]
+  },
+  {
+    "paperId": "6699c1620d2c3a3e2b7314296b5cb462fba29b1a",
+    "url": "https://www.semanticscholar.org/paper/6699c1620d2c3a3e2b7314296b5cb462fba29b1a",
+    "title": "Abstract — Analysis of the frequency response of integrated transmission-distribution networks with deep penetration of solar photovoltaic (PV) generation faces major challenges due to the complexity emerging from dynamic models of the numerous",
+    "venue": "",
+    "year": 2021,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "9320746",
+        "name": "M. G. Dozein"
+      },
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "31190063",
+        "name": "P. Mancarella"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "6dea92cbb561f74166cd9532a569c7d9a9db65c9",
+    "url": "https://www.semanticscholar.org/paper/6dea92cbb561f74166cd9532a569c7d9a9db65c9",
+    "title": "‘Cooperative game’ inspired approach for multi-area power system security management taking advantage of grid flexibilities",
+    "venue": "Philosophical Transactions of the Royal Society A",
+    "year": 2021,
+    "citationCount": 5,
+    "authors": [
+      {
+        "authorId": "49205063",
+        "name": "E. Karangelos"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "77f9a783b81a87945bce41ae0e9f8181ecc5ec17",
+    "url": "https://www.semanticscholar.org/paper/77f9a783b81a87945bce41ae0e9f8181ecc5ec17",
+    "title": "Frequency Response From Solar PV: A Dynamic Equivalence Closed-Loop System Identification Approach",
+    "venue": "IEEE Systems Journal",
+    "year": 2021,
+    "citationCount": 13,
+    "authors": [
+      {
+        "authorId": "9320746",
+        "name": "M. G. Dozein"
+      },
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "31190063",
+        "name": "P. Mancarella"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "7c33fc55c4518c2d73215e6d05e7b80ab3420e59",
+    "url": "https://www.semanticscholar.org/paper/7c33fc55c4518c2d73215e6d05e7b80ab3420e59",
+    "title": "Extended Equal Area Criterion Revisited: A Direct Method for Fast Transient Stability Analysis",
+    "venue": "Energies",
+    "year": 2021,
+    "citationCount": 13,
+    "authors": [
+      {
+        "authorId": "3493356",
+        "name": "A. Bahmanyar"
+      },
+      {
+        "authorId": "1751167",
+        "name": "D. Ernst"
+      },
+      {
+        "authorId": "3003526",
+        "name": "Yves Vanaubel"
+      },
+      {
+        "authorId": "3121879",
+        "name": "Quentin Gemine"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "7d88d59917387c7ad37268f2d3dd269d695dec00",
+    "url": "https://www.semanticscholar.org/paper/7d88d59917387c7ad37268f2d3dd269d695dec00",
+    "title": "Cloud Electricity Storage for Multi-Service Battery Operation: Case of RTE",
+    "venue": "Social Science Research Network",
+    "year": 2021,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "31347851",
+        "name": "M. Rasouli"
+      },
+      {
+        "authorId": "2113205672",
+        "name": "Tao Sun"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1790944",
+        "name": "Ramesh Johari"
+      },
+      {
+        "authorId": "2515457",
+        "name": "R. Rajagopal"
+      }
+    ]
+  },
+  {
+    "paperId": "b82b38928225f8079191d62d1e77c8c07d0ab135",
+    "url": "https://www.semanticscholar.org/paper/b82b38928225f8079191d62d1e77c8c07d0ab135",
+    "title": "Learning to run a Power Network Challenge: a Retrospective Analysis",
+    "venue": "Neural Information Processing Systems",
+    "year": 2021,
+    "citationCount": 91,
+    "authors": [
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1387885286",
+        "name": "Gabriel Dulac-Arnold"
+      },
+      {
+        "authorId": "2056517389",
+        "name": "A. Kelly"
+      },
+      {
+        "authorId": "1401751788",
+        "name": "A. O'Sullivan"
+      },
+      {
+        "authorId": "3262834",
+        "name": "Jan Viebahn"
+      },
+      {
+        "authorId": "144707373",
+        "name": "M. Awad"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2053850288",
+        "name": "Camilo Romero"
+      }
+    ]
+  },
+  {
+    "paperId": "d3c6b8dd1f6742d1db93133fded88b6b6293af26",
+    "url": "https://www.semanticscholar.org/paper/d3c6b8dd1f6742d1db93133fded88b6b6293af26",
+    "title": "Aggregation and Control of a Heterogeneous Population of Solar Panels Over the Grid Frequency",
+    "venue": "IEEE Transactions on Control Systems Technology",
+    "year": 2021,
+    "citationCount": 6,
+    "authors": [
+      {
+        "authorId": "40260897",
+        "name": "Andrea Peruffo"
+      },
+      {
+        "authorId": "23197805",
+        "name": "E. Guiu"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "144938187",
+        "name": "A. Abate"
+      }
+    ]
+  },
+  {
+    "paperId": "1b389944395c210e92dea97a882b5c309cd622e4",
+    "url": "https://www.semanticscholar.org/paper/1b389944395c210e92dea97a882b5c309cd622e4",
+    "title": "L2RPN: Learning to Run a Power Network in a Sustainable World NeurIPS2020 challenge design",
+    "venue": "",
+    "year": 2020,
+    "citationCount": 26,
+    "authors": [
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1387885286",
+        "name": "Gabriel Dulac-Arnold"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "144707373",
+        "name": "M. Awad"
+      },
+      {
+        "authorId": "1401751788",
+        "name": "A. O'Sullivan"
+      },
+      {
+        "authorId": "2056517389",
+        "name": "A. Kelly"
+      },
+      {
+        "authorId": "1382196449",
+        "name": "Z. Hampel-Arias"
+      }
+    ]
+  },
+  {
+    "paperId": "630263bda9388f71f883254fb68759b60596b2be",
+    "url": "https://www.semanticscholar.org/paper/630263bda9388f71f883254fb68759b60596b2be",
+    "title": "Dynamic equivalent of a real distribution grid hosting photovoltaic and synchronous generators",
+    "venue": "",
+    "year": 2020,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "9320746",
+        "name": "M. G. Dozein"
+      },
+      {
+        "authorId": "84492289",
+        "name": "G. Denis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "9127dc22e6b02ee12116d88ec0044f2a522e0e6a",
+    "url": "https://www.semanticscholar.org/paper/9127dc22e6b02ee12116d88ec0044f2a522e0e6a",
+    "title": "LEAP nets for system identification and application to power systems",
+    "venue": "Neurocomputing",
+    "year": 2020,
+    "citationCount": 16,
+    "authors": [
+      {
+        "authorId": "81650578",
+        "name": "Balthazar Donon"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "73785871",
+        "name": "Zhengying Liu"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      }
+    ]
+  },
+  {
+    "paperId": "9598417c8895bc85ca5f1a300ed4ee57cb3afe65",
+    "url": "https://www.semanticscholar.org/paper/9598417c8895bc85ca5f1a300ed4ee57cb3afe65",
+    "title": "Multi-Service Battery Operation with Cloud Electricity Storage",
+    "venue": "IEEE Power & Energy Society General Meeting",
+    "year": 2020,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "31347851",
+        "name": "M. Rasouli"
+      },
+      {
+        "authorId": "2113204498",
+        "name": "Tao Sun"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1790944",
+        "name": "Ramesh Johari"
+      },
+      {
+        "authorId": "2515457",
+        "name": "R. Rajagopal"
+      }
+    ]
+  },
+  {
+    "paperId": "9e26762c949f11dd66bba8fe7072e23ec52e2371",
+    "url": "https://www.semanticscholar.org/paper/9e26762c949f11dd66bba8fe7072e23ec52e2371",
+    "title": "Optimal Pricing Approach Based on Expected Utility Maximization with Partial Information",
+    "venue": "International Conference on Network Games, Control and Optimization",
+    "year": 2020,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "50445382",
+        "name": "Chao Zhang"
+      },
+      {
+        "authorId": "50371853",
+        "name": "Hang Zou"
+      },
+      {
+        "authorId": "1727608",
+        "name": "S. Lasaulce"
+      },
+      {
+        "authorId": "2251541",
+        "name": "V. Varma"
+      },
+      {
+        "authorId": "66599763",
+        "name": "L. Saludjian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "bbddd037a12f5d01317d2ee9b9041fa39266a33f",
+    "url": "https://www.semanticscholar.org/paper/bbddd037a12f5d01317d2ee9b9041fa39266a33f",
+    "title": "An Active Distribution Network Equivalent Derived From Large-Disturbance Simulations With Uncertainty",
+    "venue": "IEEE Transactions on Smart Grid",
+    "year": 2020,
+    "citationCount": 43,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "84492289",
+        "name": "G. Denis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "eabc16632f6a6cbfbaa097ef17891cf5309e582d",
+    "url": "https://www.semanticscholar.org/paper/eabc16632f6a6cbfbaa097ef17891cf5309e582d",
+    "title": "A Game-Theoretical Approach for Energy Efficiency in Multiuser MIMO System",
+    "venue": "International Conference on Network Games, Control and Optimization",
+    "year": 2020,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "50371853",
+        "name": "Hang Zou"
+      },
+      {
+        "authorId": "50445382",
+        "name": "Chao Zhang"
+      },
+      {
+        "authorId": "1727608",
+        "name": "S. Lasaulce"
+      },
+      {
+        "authorId": "66599763",
+        "name": "L. Saludjian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "0f76779574aa6995bfd3bc7369049a7d74e6ea4a",
+    "url": "https://www.semanticscholar.org/paper/0f76779574aa6995bfd3bc7369049a7d74e6ea4a",
+    "title": "Robust Parameter Estimation of the French Power System Using Field Data",
+    "venue": "IEEE Transactions on Smart Grid",
+    "year": 2019,
+    "citationCount": 22,
+    "authors": [
+      {
+        "authorId": "2023394",
+        "name": "Junbo Zhao"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "143836224",
+        "name": "L. Mili"
+      }
+    ]
+  },
+  {
+    "paperId": "16047b945bc41c1ea17c43bd2810129b8d4e5b0e",
+    "url": "https://www.semanticscholar.org/paper/16047b945bc41c1ea17c43bd2810129b8d4e5b0e",
+    "title": "Input-Output Properties of the Power Grid’s Swing Dynamics: Dependence on Network Parameters",
+    "venue": "Conference on Control Technology and Applications",
+    "year": 2019,
+    "citationCount": 6,
+    "authors": [
+      {
+        "authorId": "8181030",
+        "name": "Kasra Koorehdavoudi"
+      },
+      {
+        "authorId": "1712633",
+        "name": "Sandip Roy"
+      },
+      {
+        "authorId": "49125831",
+        "name": "T. Prévost"
+      },
+      {
+        "authorId": "30189312",
+        "name": "F. Xavier"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2143254",
+        "name": "V. Venkatasubramanian"
+      }
+    ]
+  },
+  {
+    "paperId": "1ba71426163a7046605c768dec8b28b26878706f",
+    "url": "https://www.semanticscholar.org/paper/1ba71426163a7046605c768dec8b28b26878706f",
+    "title": "Cloud Storage for Multi-Service Battery Operation (Extended Version)",
+    "venue": "",
+    "year": 2019,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "31347851",
+        "name": "M. Rasouli"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1790944",
+        "name": "Ramesh Johari"
+      },
+      {
+        "authorId": "2071496917",
+        "name": "R. Rajagopal"
+      }
+    ]
+  },
+  {
+    "paperId": "2a1cafd603ef9630c7735f29cc00d28814f2bc0c",
+    "url": "https://www.semanticscholar.org/paper/2a1cafd603ef9630c7735f29cc00d28814f2bc0c",
+    "title": "Safety Guarantees for the Electricity Grid with Significant Renewables Generation",
+    "venue": "International Conference on Quantitative Evaluation of Systems",
+    "year": 2019,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "40260897",
+        "name": "Andrea Peruffo"
+      },
+      {
+        "authorId": "23197805",
+        "name": "E. Guiu"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "144938187",
+        "name": "A. Abate"
+      }
+    ]
+  },
+  {
+    "paperId": "31ebac09acfabdd7d8efe5e3b31add2e6a8747e0",
+    "url": "https://www.semanticscholar.org/paper/31ebac09acfabdd7d8efe5e3b31add2e6a8747e0",
+    "title": "Cloud Storage for Multi-Service Battery Operation (Extended Version)",
+    "venue": "",
+    "year": 2019,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "31347851",
+        "name": "M. Rasouli"
+      },
+      {
+        "authorId": "2113205672",
+        "name": "Tao Sun"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1790944",
+        "name": "Ramesh Johari"
+      },
+      {
+        "authorId": "2515457",
+        "name": "R. Rajagopal"
+      }
+    ]
+  },
+  {
+    "paperId": "49799445b3b413fd1cd9f20fe5dcf126f99e830c",
+    "url": "https://www.semanticscholar.org/paper/49799445b3b413fd1cd9f20fe5dcf126f99e830c",
+    "title": "Energy-Efficient MIMO Multiuser Systems: Nash Equilibrium Analysis",
+    "venue": "Advances in Ubiquitous Networking",
+    "year": 2019,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "50371853",
+        "name": "Hang Zou"
+      },
+      {
+        "authorId": null,
+        "name": "Chao Zhang"
+      },
+      {
+        "authorId": "1727608",
+        "name": "S. Lasaulce"
+      },
+      {
+        "authorId": "66599763",
+        "name": "L. Saludjian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "51484c8feca569747b97b19534e6429f23f7367d",
+    "url": "https://www.semanticscholar.org/paper/51484c8feca569747b97b19534e6429f23f7367d",
+    "title": "The Power Grid Library for Benchmarking AC Optimal Power Flow Algorithms",
+    "venue": "arXiv.org",
+    "year": 2019,
+    "citationCount": 311,
+    "authors": [
+      {
+        "authorId": "98493012",
+        "name": "S. Babaeinejadsarookolaee"
+      },
+      {
+        "authorId": "9628496",
+        "name": "A. Birchfield"
+      },
+      {
+        "authorId": "50371500",
+        "name": "R. Christie"
+      },
+      {
+        "authorId": "1731506",
+        "name": "Carleton Coffrin"
+      },
+      {
+        "authorId": "2283826",
+        "name": "C. DeMarco"
+      },
+      {
+        "authorId": "3329277",
+        "name": "R. Diao"
+      },
+      {
+        "authorId": "5106399",
+        "name": "M. Ferris"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "95366063",
+        "name": "Scott Greene"
+      },
+      {
+        "authorId": "2373625",
+        "name": "Renke Huang"
+      },
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "31091622",
+        "name": "R. Korab"
+      },
+      {
+        "authorId": "1786648",
+        "name": "B. Lesieutre"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1767498",
+        "name": "D. Molzahn"
+      },
+      {
+        "authorId": "2295613",
+        "name": "T. Overbye"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "11643036",
+        "name": "Byungkwon Park"
+      },
+      {
+        "authorId": "38093883",
+        "name": "Jonathan Snodgrass"
+      },
+      {
+        "authorId": "87836981",
+        "name": "R. Zimmerman"
+      }
+    ]
+  },
+  {
+    "paperId": "5cdbd849d81f95cfa2eb8d6889a91c84c56a3ba7",
+    "url": "https://www.semanticscholar.org/paper/5cdbd849d81f95cfa2eb8d6889a91c84c56a3ba7",
+    "title": "Decision Set Optimization and Energy-Efficient MIMO Communications",
+    "venue": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications",
+    "year": 2019,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "50371853",
+        "name": "Hang Zou"
+      },
+      {
+        "authorId": null,
+        "name": "Chao Zhang"
+      },
+      {
+        "authorId": "1727608",
+        "name": "S. Lasaulce"
+      },
+      {
+        "authorId": "66599763",
+        "name": "L. Saludjian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "5dd95953ad5dee1e782660b92197d90d66d9f17c",
+    "url": "https://www.semanticscholar.org/paper/5dd95953ad5dee1e782660b92197d90d66d9f17c",
+    "title": "LEAP nets for power grid perturbations",
+    "venue": "The European Symposium on Artificial Neural Networks",
+    "year": 2019,
+    "citationCount": 12,
+    "authors": [
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "81650578",
+        "name": "Balthazar Donon"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "73785871",
+        "name": "Zhengying Liu"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      }
+    ]
+  },
+  {
+    "paperId": "6af9c8fb80104a4f5be0b4e55cd2c1d80afbb831",
+    "url": "https://www.semanticscholar.org/paper/6af9c8fb80104a4f5be0b4e55cd2c1d80afbb831",
+    "title": "Clustering of Power System Oscillatory Modes Using DBSCAN Technique",
+    "venue": "North American Power Symposium",
+    "year": 2019,
+    "citationCount": 9,
+    "authors": [
+      {
+        "authorId": "1500521863",
+        "name": "M. Farrokhifard"
+      },
+      {
+        "authorId": "7925465",
+        "name": "M. Hatami"
+      },
+      {
+        "authorId": "2143254",
+        "name": "V. Venkatasubramanian"
+      },
+      {
+        "authorId": "1500523985",
+        "name": "Gilles Torresan"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "30189312",
+        "name": "F. Xavier"
+      }
+    ]
+  },
+  {
+    "paperId": "782f7a8004d54b388c66be8548479b6429778dfa",
+    "url": "https://www.semanticscholar.org/paper/782f7a8004d54b388c66be8548479b6429778dfa",
+    "title": "Dynamic equivalent of an active distribution network taking into account model uncertainties",
+    "venue": "2019 IEEE Milan PowerTech",
+    "year": 2019,
+    "citationCount": 8,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "84492289",
+        "name": "G. Denis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "9990fd49809d0c666f780eb636a896ce9136c8d8",
+    "url": "https://www.semanticscholar.org/paper/9990fd49809d0c666f780eb636a896ce9136c8d8",
+    "title": "Resilient Cyber Infrastructure for the Minimum Wind Curtailment Remedial Control Scheme",
+    "venue": "IEEE transactions on industry applications",
+    "year": 2019,
+    "citationCount": 4,
+    "authors": [
+      {
+        "authorId": "144818543",
+        "name": "V. Krishnan"
+      },
+      {
+        "authorId": "120474555",
+        "name": "S. Gopal"
+      },
+      {
+        "authorId": "144237015",
+        "name": "Ren Liu"
+      },
+      {
+        "authorId": "7429329",
+        "name": "Alexander Askerman"
+      },
+      {
+        "authorId": "40594183",
+        "name": "A. Srivastava"
+      },
+      {
+        "authorId": "1781127",
+        "name": "D. Bakken"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "b0b038a41239b85407d88e5e6da8a2165b21ae0f",
+    "url": "https://www.semanticscholar.org/paper/b0b038a41239b85407d88e5e6da8a2165b21ae0f",
+    "title": "Identification of a Dynamic Equivalent of an Active Distribution Network from Monte-Carlo Simulations",
+    "venue": "",
+    "year": 2019,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "84492289",
+        "name": "G. Denis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "bdb5e737e9d2fc9492508e9ffc4e1bff15d5e191",
+    "url": "https://www.semanticscholar.org/paper/bdb5e737e9d2fc9492508e9ffc4e1bff15d5e191",
+    "title": "Using Vine Copulas to Generate Representative System States for Machine Learning",
+    "venue": "IEEE Transactions on Power Systems",
+    "year": 2019,
+    "citationCount": 43,
+    "authors": [
+      {
+        "authorId": "3450451",
+        "name": "Ioannis Konstantelos"
+      },
+      {
+        "authorId": "46611113",
+        "name": "Mingyang Sun"
+      },
+      {
+        "authorId": "1880385",
+        "name": "Simon Tindemans"
+      },
+      {
+        "authorId": "30933682",
+        "name": "Samir Issad"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "145075357",
+        "name": "G. Strbac"
+      }
+    ]
+  },
+  {
+    "paperId": "f729c5a421dfdc257ef99937266b2607478b41d1",
+    "url": "https://www.semanticscholar.org/paper/f729c5a421dfdc257ef99937266b2607478b41d1",
+    "title": "Position paper on the challenges posed by modern applications to cyber-physical systems theory",
+    "venue": "Nonlinear Analysis: Hybrid Systems",
+    "year": 2019,
+    "citationCount": 38,
+    "authors": [
+      {
+        "authorId": "144295691",
+        "name": "F. Allgöwer"
+      },
+      {
+        "authorId": "115938859",
+        "name": "J. Borges de Sousa"
+      },
+      {
+        "authorId": "1746126",
+        "name": "J. Kapinski"
+      },
+      {
+        "authorId": "1779212",
+        "name": "P. Mosterman"
+      },
+      {
+        "authorId": "1755866",
+        "name": "Jens Oehlerking"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2193683",
+        "name": "M. Prandini"
+      },
+      {
+        "authorId": "3142915",
+        "name": "A. Rajhans"
+      },
+      {
+        "authorId": "1791875",
+        "name": "P. Tabuada"
+      },
+      {
+        "authorId": "7765603",
+        "name": "Philipp Wenzelburger"
+      }
+    ]
+  },
+  {
+    "paperId": "fa59ec2f99258453954bf80066e49bc280f5f198",
+    "url": "https://www.semanticscholar.org/paper/fa59ec2f99258453954bf80066e49bc280f5f198",
+    "title": "Nonlinear Analysis: Hybrid Systems",
+    "venue": "",
+    "year": 2019,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "144295691",
+        "name": "F. Allgöwer"
+      },
+      {
+        "authorId": "144626155",
+        "name": "J. Sousa"
+      },
+      {
+        "authorId": "1746126",
+        "name": "J. Kapinski"
+      },
+      {
+        "authorId": "1779212",
+        "name": "P. Mosterman"
+      },
+      {
+        "authorId": "1755866",
+        "name": "Jens Oehlerking"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2193683",
+        "name": "M. Prandini"
+      },
+      {
+        "authorId": "3142915",
+        "name": "A. Rajhans"
+      },
+      {
+        "authorId": "1791875",
+        "name": "P. Tabuada"
+      },
+      {
+        "authorId": "7765603",
+        "name": "Philipp Wenzelburger"
+      }
+    ]
+  },
+  {
+    "paperId": "0a233235e0d6da4beda69258fdf7564fb99e45df",
+    "url": "https://www.semanticscholar.org/paper/0a233235e0d6da4beda69258fdf7564fb99e45df",
+    "title": "Expert Guided Machine Learning with physical model for adaptive representation of smart grids",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "52140516",
+        "name": "Sami Tazi"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2079982400",
+        "name": "Benjamin Donot"
+      }
+    ]
+  },
+  {
+    "paperId": "0e28c056b39c1449aa2e069b6aa4016f350d7120",
+    "url": "https://www.semanticscholar.org/paper/0e28c056b39c1449aa2e069b6aa4016f350d7120",
+    "title": "Decision-Oriented Communications: Application to Energy-Efficient Resource Allocation",
+    "venue": "International Conference on Wireless Networks and Mobile Communications",
+    "year": 2018,
+    "citationCount": 10,
+    "authors": [
+      {
+        "authorId": "50371853",
+        "name": "Hang Zou"
+      },
+      {
+        "authorId": "50445382",
+        "name": "Chao Zhang"
+      },
+      {
+        "authorId": "1727608",
+        "name": "S. Lasaulce"
+      },
+      {
+        "authorId": "66599763",
+        "name": "L. Saludjian"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "16b104a2f37ebcbac32687168ae3063c704071b5",
+    "url": "https://www.semanticscholar.org/paper/16b104a2f37ebcbac32687168ae3063c704071b5",
+    "title": "Towards an Open-Source Solution using Modelica for Time-Domain Simulation of Power Systems",
+    "venue": "IEEE PES Innovative Smart Grid Technologies Conference Europe",
+    "year": 2018,
+    "citationCount": 40,
+    "authors": [
+      {
+        "authorId": "51230494",
+        "name": "A. Guironnet"
+      },
+      {
+        "authorId": "93446291",
+        "name": "M. Saugier"
+      },
+      {
+        "authorId": "52213542",
+        "name": "S. Petitrenaud"
+      },
+      {
+        "authorId": "30189312",
+        "name": "F. Xavier"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "1cc4dcd9157503587c67618e6c26b6f129d6161c",
+    "url": "https://www.semanticscholar.org/paper/1cc4dcd9157503587c67618e6c26b6f129d6161c",
+    "title": "Congestion management within a multi-service scheduling coordination scheme for large battery storage systems",
+    "venue": "2019 IEEE Milan PowerTech",
+    "year": 2018,
+    "citationCount": 14,
+    "authors": [
+      {
+        "authorId": "83064641",
+        "name": "Clementine Straub"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2515457",
+        "name": "R. Rajagopal"
+      }
+    ]
+  },
+  {
+    "paperId": "276aeeea0dbd8b92ef9db67112bf84e5320ede9e",
+    "url": "https://www.semanticscholar.org/paper/276aeeea0dbd8b92ef9db67112bf84e5320ede9e",
+    "title": "Modelling Active Distribution Networks Under Uncertainty: Extracting Parameter Sets from Randomized Dynamic Responses",
+    "venue": "Power Systems Computation Conference",
+    "year": 2018,
+    "citationCount": 17,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "27a62450efe4266a5935f6f970b3d7ab6447e74e",
+    "url": "https://www.semanticscholar.org/paper/27a62450efe4266a5935f6f970b3d7ab6447e74e",
+    "title": "Latent Surgical Interventions in Residual Neural Networks",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "73785871",
+        "name": "Zhengying Liu"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "34ed7ce8a60d11f2318d3bd45bd4516447f78bbc",
+    "url": "https://www.semanticscholar.org/paper/34ed7ce8a60d11f2318d3bd45bd4516447f78bbc",
+    "title": "Decentralized model predictive control of voltage source converters for AC frequency containment",
+    "venue": "International Journal of Electrical Power & Energy Systems",
+    "year": 2018,
+    "citationCount": 34,
+    "authors": [
+      {
+        "authorId": "3450536",
+        "name": "L. Papangelis"
+      },
+      {
+        "authorId": "3451111",
+        "name": "Marie-Sophie Debry"
+      },
+      {
+        "authorId": "49125831",
+        "name": "T. Prévost"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "4c14c07c7642e8886f30ad43795f659122c7e070",
+    "url": "https://www.semanticscholar.org/paper/4c14c07c7642e8886f30ad43795f659122c7e070",
+    "title": "Complementarity Assessment of South Greenland Katabatic Flows and West Europe Wind Regimes",
+    "venue": "Energy",
+    "year": 2018,
+    "citationCount": 23,
+    "authors": [
+      {
+        "authorId": "113865933",
+        "name": "D. Radu"
+      },
+      {
+        "authorId": "145590533",
+        "name": "M. Berger"
+      },
+      {
+        "authorId": "101889151",
+        "name": "R. Fonteneau"
+      },
+      {
+        "authorId": "2054344000",
+        "name": "Simon Hardy"
+      },
+      {
+        "authorId": "5599150",
+        "name": "X. Fettweis"
+      },
+      {
+        "authorId": "31874056",
+        "name": "M. L. Du"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "115101406",
+        "name": "Lucian Balea"
+      },
+      {
+        "authorId": "1751167",
+        "name": "D. Ernst"
+      }
+    ]
+  },
+  {
+    "paperId": "4d4bc68a92c84bfa57257ee968542a6b5d542e40",
+    "url": "https://www.semanticscholar.org/paper/4d4bc68a92c84bfa57257ee968542a6b5d542e40",
+    "title": "Title Economic and technical criteria for designing future off-shoreHVDC grids",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "145183818",
+        "name": "K. Bell"
+      },
+      {
+        "authorId": "3101307",
+        "name": "D. Cirio"
+      },
+      {
+        "authorId": "94515895",
+        "name": "A. Denis"
+      },
+      {
+        "authorId": "2196275164",
+        "name": "L. He"
+      },
+      {
+        "authorId": "70587111",
+        "name": "C. C. Liu"
+      },
+      {
+        "authorId": "2524780",
+        "name": "G. Migliavacca"
+      },
+      {
+        "authorId": "144757884",
+        "name": "C. Moreira"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "51fa4b1038ee72dac0c6b4f0a7bddaa594117ecb",
+    "url": "https://www.semanticscholar.org/paper/51fa4b1038ee72dac0c6b4f0a7bddaa594117ecb",
+    "title": "Synchronous Frequency Grid Dynamics in the Presence of a Large-Scale Population of Photovoltaic Panels",
+    "venue": "Power Systems Computation Conference",
+    "year": 2018,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "40260897",
+        "name": "Andrea Peruffo"
+      },
+      {
+        "authorId": "144938187",
+        "name": "A. Abate"
+      },
+      {
+        "authorId": "23197805",
+        "name": "E. Guiu"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "5a48380f26d82fd3a9fefa2dd6baba3dd5f20164",
+    "url": "https://www.semanticscholar.org/paper/5a48380f26d82fd3a9fefa2dd6baba3dd5f20164",
+    "title": "Robust MPC for temperature management on electrical transmission lines",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 8,
+    "authors": [
+      {
+        "authorId": "83064641",
+        "name": "Clementine Straub"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "5f66bd961dcad4d761c3a97f06a9335c91dadb52",
+    "url": "https://www.semanticscholar.org/paper/5f66bd961dcad4d761c3a97f06a9335c91dadb52",
+    "title": "Speedup of EMT simulations by using an integration scheme enriched with a predictive Fourier coefficients estimator",
+    "venue": "IEEE PES Innovative Smart Grid Technologies Conference Europe",
+    "year": 2018,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "31363134",
+        "name": "P. Gibert"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "51227213",
+        "name": "Romain Losseau"
+      },
+      {
+        "authorId": "51230494",
+        "name": "A. Guironnet"
+      },
+      {
+        "authorId": "1403895911",
+        "name": "D. Tromeur-Dervout"
+      },
+      {
+        "authorId": "3198718",
+        "name": "J. Erhel"
+      }
+    ]
+  },
+  {
+    "paperId": "612d9b3b806360d102bbb79f987c79363b5e2dc7",
+    "url": "https://www.semanticscholar.org/paper/612d9b3b806360d102bbb79f987c79363b5e2dc7",
+    "title": "Optimization of computational budget for power system risk assessment",
+    "venue": "IEEE PES Innovative Smart Grid Technologies Conference Europe",
+    "year": 2018,
+    "citationCount": 12,
+    "authors": [
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "620bbb7c45717453a007423eb4b47f782a9b59a2",
+    "url": "https://www.semanticscholar.org/paper/620bbb7c45717453a007423eb4b47f782a9b59a2",
+    "title": "Expert System for topological remedial action discovery in smart grids",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 35,
+    "authors": [
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "52140516",
+        "name": "Sami Tazi"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "6b32709d63610d3e12faf374bfc6fd591310694c",
+    "url": "https://www.semanticscholar.org/paper/6b32709d63610d3e12faf374bfc6fd591310694c",
+    "title": "Use of the Sinusoidal Predictor Method within a Fully Separated Modeler/Solver Framework for Fast and Flexible EMT Simulations",
+    "venue": "International Conference on Simulation and Modeling Methodologies, Technologies and Applications",
+    "year": 2018,
+    "citationCount": 3,
+    "authors": [
+      {
+        "authorId": "31363134",
+        "name": "P. Gibert"
+      },
+      {
+        "authorId": "51227213",
+        "name": "Romain Losseau"
+      },
+      {
+        "authorId": "51230494",
+        "name": "A. Guironnet"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "1403895911",
+        "name": "D. Tromeur-Dervout"
+      },
+      {
+        "authorId": "3198718",
+        "name": "J. Erhel"
+      }
+    ]
+  },
+  {
+    "paperId": "72bcfd2c36526fe8bfddb40180a5d2f12685286c",
+    "url": "https://www.semanticscholar.org/paper/72bcfd2c36526fe8bfddb40180a5d2f12685286c",
+    "title": "Anticipating contingengies in power grids using fast neural net screening",
+    "venue": "IEEE International Joint Conference on Neural Network",
+    "year": 2018,
+    "citationCount": 16,
+    "authors": [
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "75dfd35735ca256001af51d61d81f6bda0aa9b9e",
+    "url": "https://www.semanticscholar.org/paper/75dfd35735ca256001af51d61d81f6bda0aa9b9e",
+    "title": "Hierarchical Programming for Worst-Case Analysis of Power Grids",
+    "venue": "Power Systems Computation Conference",
+    "year": 2018,
+    "citationCount": 8,
+    "authors": [
+      {
+        "authorId": "10796070",
+        "name": "Hatim Djelassi"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "46356209",
+        "name": "A. Mitsos"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "77a25c790b05d9841336756e6d4cf3f8409b470d",
+    "url": "https://www.semanticscholar.org/paper/77a25c790b05d9841336756e6d4cf3f8409b470d",
+    "title": "Stability of a Voltage Source Converter Subject to Decrease of Short-Circuit Capacity: A Case Study",
+    "venue": "Power Systems Computation Conference",
+    "year": 2018,
+    "citationCount": 27,
+    "authors": [
+      {
+        "authorId": "3450536",
+        "name": "L. Papangelis"
+      },
+      {
+        "authorId": "3451111",
+        "name": "Marie-Sophie Debry"
+      },
+      {
+        "authorId": "49125831",
+        "name": "T. Prévost"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "bacaa27df932731fe6834dca3c0f47ab7567b181",
+    "url": "https://www.semanticscholar.org/paper/bacaa27df932731fe6834dca3c0f47ab7567b181",
+    "title": "Impact of Solar Panels and Cooling Devices on Frequency Control After a Generation Loss Incident",
+    "venue": "IEEE Conference on Decision and Control",
+    "year": 2018,
+    "citationCount": 2,
+    "authors": [
+      {
+        "authorId": "40260897",
+        "name": "Andrea Peruffo"
+      },
+      {
+        "authorId": "23197805",
+        "name": "E. Guiu"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "144938187",
+        "name": "A. Abate"
+      }
+    ]
+  },
+  {
+    "paperId": "d7fe8f1453ced22e29b9e757fd8ded6dd41582dd",
+    "url": "https://www.semanticscholar.org/paper/d7fe8f1453ced22e29b9e757fd8ded6dd41582dd",
+    "title": "Zonal Congestion Management Mixing Large Battery Storage Systems and Generation Curtailment",
+    "venue": "Conference on Control Technology and Applications",
+    "year": 2018,
+    "citationCount": 21,
+    "authors": [
+      {
+        "authorId": "83064641",
+        "name": "Clementine Straub"
+      },
+      {
+        "authorId": "1784581",
+        "name": "Sorin Olaru"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "d82c0a51553c59cb61e873961fb4cf90127b334f",
+    "url": "https://www.semanticscholar.org/paper/d82c0a51553c59cb61e873961fb4cf90127b334f",
+    "title": "Aggregated Dynamic Equivalent of a Distribution System Hosting Inverter-Based Generators",
+    "venue": "Power Systems Computation Conference",
+    "year": 2018,
+    "citationCount": 18,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "dca6756070ad9fe63160e903076dc2181f346a13",
+    "url": "https://www.semanticscholar.org/paper/dca6756070ad9fe63160e903076dc2181f346a13",
+    "title": "Maximal Positive Invariant Set Determination for Transient Stability Assessment in Power Systems",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 6,
+    "authors": [
+      {
+        "authorId": "82861972",
+        "name": "Antoine Oustry"
+      },
+      {
+        "authorId": "27092166",
+        "name": "C. Cardozo"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "32526897",
+        "name": "D. Henrion"
+      }
+    ]
+  },
+  {
+    "paperId": "f991f8ab4406fefe8060f0fa02592c5c566d82d0",
+    "url": "https://www.semanticscholar.org/paper/f991f8ab4406fefe8060f0fa02592c5c566d82d0",
+    "title": "Critical Time Windows for Renewable Resource Complementarity Assessment",
+    "venue": "Energy",
+    "year": 2018,
+    "citationCount": 30,
+    "authors": [
+      {
+        "authorId": "145590533",
+        "name": "M. Berger"
+      },
+      {
+        "authorId": "38445779",
+        "name": "Radu-Codrut David"
+      },
+      {
+        "authorId": "101889151",
+        "name": "R. Fonteneau"
+      },
+      {
+        "authorId": "2057068305",
+        "name": "Robin Henry"
+      },
+      {
+        "authorId": "30536477",
+        "name": "M. Glavic"
+      },
+      {
+        "authorId": "5599150",
+        "name": "X. Fettweis"
+      },
+      {
+        "authorId": "31874056",
+        "name": "M. L. Du"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "115101406",
+        "name": "Lucian Balea"
+      },
+      {
+        "authorId": "1751167",
+        "name": "D. Ernst"
+      }
+    ]
+  },
+  {
+    "paperId": "043284bd6c13349e4adf5f1464922c19c769ff34",
+    "url": "https://www.semanticscholar.org/paper/043284bd6c13349e4adf5f1464922c19c769ff34",
+    "title": "Resilient cyber infrastructure for the minimum wind curtailment remedial control scheme",
+    "venue": "Annual Meeting of the IEEE Industry Applications Society",
+    "year": 2017,
+    "citationCount": 9,
+    "authors": [
+      {
+        "authorId": "144818543",
+        "name": "V. Krishnan"
+      },
+      {
+        "authorId": "144237015",
+        "name": "Ren Liu"
+      },
+      {
+        "authorId": "7429329",
+        "name": "Alexander Askerman"
+      },
+      {
+        "authorId": "40594183",
+        "name": "A. Srivastava"
+      },
+      {
+        "authorId": "1781127",
+        "name": "D. Bakken"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "1419abd8d2bf323d7c132243ad6bc7be5735a1af",
+    "url": "https://www.semanticscholar.org/paper/1419abd8d2bf323d7c132243ad6bc7be5735a1af",
+    "title": "Aggregated Markov Models of a Heterogeneous Population of Photovoltaic Panels",
+    "venue": "International Conference on Quantitative Evaluation of Systems",
+    "year": 2017,
+    "citationCount": 5,
+    "authors": [
+      {
+        "authorId": "40260897",
+        "name": "Andrea Peruffo"
+      },
+      {
+        "authorId": "23197805",
+        "name": "E. Guiu"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "144938187",
+        "name": "A. Abate"
+      }
+    ]
+  },
+  {
+    "paperId": "1b2c5f94f54f8359221f494cc4169d5913aa1411",
+    "url": "https://www.semanticscholar.org/paper/1b2c5f94f54f8359221f494cc4169d5913aa1411",
+    "title": "Introducing machine learning for power system operation support",
+    "venue": "arXiv.org",
+    "year": 2017,
+    "citationCount": 49,
+    "authors": [
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      }
+    ]
+  },
+  {
+    "paperId": "218ca5712418849e7df94e657883c6875fc2262b",
+    "url": "https://www.semanticscholar.org/paper/218ca5712418849e7df94e657883c6875fc2262b",
+    "title": "A receding horizon approach to incorporate frequency support into the AC/DC converters of a multi-terminal DC grid",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 21,
+    "authors": [
+      {
+        "authorId": "3450536",
+        "name": "L. Papangelis"
+      },
+      {
+        "authorId": "3451111",
+        "name": "Marie-Sophie Debry"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "4d741ddff1b93d64b55a8d01a5d435c1e5ed71a4",
+    "url": "https://www.semanticscholar.org/paper/4d741ddff1b93d64b55a8d01a5d435c1e5ed71a4",
+    "title": "PGLib OPF Case 1951 RTE",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "563aaebe257c025aa5a9ae411eec28601a315f5c",
+    "url": "https://www.semanticscholar.org/paper/563aaebe257c025aa5a9ae411eec28601a315f5c",
+    "title": "Coordinated Supervisory Control of Multi-Terminal HVDC Grids: A Model Predictive Control Approach",
+    "venue": "IEEE Transactions on Power Systems",
+    "year": 2017,
+    "citationCount": 33,
+    "authors": [
+      {
+        "authorId": "3450536",
+        "name": "L. Papangelis"
+      },
+      {
+        "authorId": "3451111",
+        "name": "Marie-Sophie Debry"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "9114249",
+        "name": "T. Van Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "56ca0220370565bb27bc366b2e5b866ad31ade96",
+    "url": "https://www.semanticscholar.org/paper/56ca0220370565bb27bc366b2e5b866ad31ade96",
+    "title": "Towards enhanced power grid management via more dynamic and flexible edge computations",
+    "venue": "Fog World Congress",
+    "year": 2017,
+    "citationCount": 10,
+    "authors": [
+      {
+        "authorId": "1781127",
+        "name": "D. Bakken"
+      },
+      {
+        "authorId": "7429329",
+        "name": "Alexander Askerman"
+      },
+      {
+        "authorId": "40594183",
+        "name": "A. Srivastava"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2504541",
+        "name": "M. Seewald"
+      },
+      {
+        "authorId": "52323341",
+        "name": "Frank Columbus"
+      },
+      {
+        "authorId": "2115186183",
+        "name": "Song Jiang"
+      }
+    ]
+  },
+  {
+    "paperId": "6350dffe168c11a9c582723419aec03a8e2109f2",
+    "url": "https://www.semanticscholar.org/paper/6350dffe168c11a9c582723419aec03a8e2109f2",
+    "title": "Large-scale power grid hierarchical segmentation based on power-flow affinities",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "52140516",
+        "name": "Sami Tazi"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "710cc3fa8df04546169a9d20fa335b9fef4d4127",
+    "url": "https://www.semanticscholar.org/paper/710cc3fa8df04546169a9d20fa335b9fef4d4127",
+    "title": "PGLib OPF Case 1888 RTE",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "8034e64999d13d0fc8d3bd24f688b67a08a7e055",
+    "url": "https://www.semanticscholar.org/paper/8034e64999d13d0fc8d3bd24f688b67a08a7e055",
+    "title": "Guided Machine Learning for Power Grid Segmentation",
+    "venue": "IEEE PES Innovative Smart Grid Technologies Conference Europe",
+    "year": 2017,
+    "citationCount": 14,
+    "authors": [
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "52140516",
+        "name": "Sami Tazi"
+      },
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "8dcaa62bf813bbdd321f2093fbcbe345c16d2ca9",
+    "url": "https://www.semanticscholar.org/paper/8dcaa62bf813bbdd321f2093fbcbe345c16d2ca9",
+    "title": "Input-Output Properties of the Swing Dynamics for Power Transmission Networks with HVDC Modulation",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 13,
+    "authors": [
+      {
+        "authorId": "8181030",
+        "name": "Kasra Koorehdavoudi"
+      },
+      {
+        "authorId": "1712633",
+        "name": "Sandip Roy"
+      },
+      {
+        "authorId": "49125831",
+        "name": "T. Prévost"
+      },
+      {
+        "authorId": "30189312",
+        "name": "F. Xavier"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2143254",
+        "name": "V. Venkatasubramanian"
+      }
+    ]
+  },
+  {
+    "paperId": "92ad7469da9f74c2a7349f84fcfa1c5e63189a38",
+    "url": "https://www.semanticscholar.org/paper/92ad7469da9f74c2a7349f84fcfa1c5e63189a38",
+    "title": "Fast Power system security analysis with Guided Dropout",
+    "venue": "The European Symposium on Artificial Neural Networks",
+    "year": 2017,
+    "citationCount": 29,
+    "authors": [
+      {
+        "authorId": "26384503",
+        "name": "Benjamin Donnot"
+      },
+      {
+        "authorId": "1743797",
+        "name": "Isabelle M Guyon"
+      },
+      {
+        "authorId": "69881991",
+        "name": "Marc Schoenauer"
+      },
+      {
+        "authorId": "2792931",
+        "name": "Antoine Marot"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "944a97aededfdd38d40232f9e223387645aca0d7",
+    "url": "https://www.semanticscholar.org/paper/944a97aededfdd38d40232f9e223387645aca0d7",
+    "title": "PGLib OPF Case 1354 Pegase",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2848639",
+        "name": "F. Capitanescu"
+      },
+      {
+        "authorId": "1695713",
+        "name": "L. Wehenkel"
+      }
+    ]
+  },
+  {
+    "paperId": "981eb66793b74e4c93bad7e6a3990206e6a77c2f",
+    "url": "https://www.semanticscholar.org/paper/981eb66793b74e4c93bad7e6a3990206e6a77c2f",
+    "title": "PGLib OPF Case 6470 RTE",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "adb9ab4a7b205d81bc815aa1dae98151ad8556d8",
+    "url": "https://www.semanticscholar.org/paper/adb9ab4a7b205d81bc815aa1dae98151ad8556d8",
+    "title": "Dynamic Equivalent of a Distribution Grid Hosting Dispersed Photovoltaic Units",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 27,
+    "authors": [
+      {
+        "authorId": "51239817",
+        "name": "G. Chaspierre"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "97491088",
+        "name": "T. Cutsem"
+      }
+    ]
+  },
+  {
+    "paperId": "c365afdb478e41bd8abdba72f65fa8f07099d4a0",
+    "url": "https://www.semanticscholar.org/paper/c365afdb478e41bd8abdba72f65fa8f07099d4a0",
+    "title": "PGLib OPF Case 89 Pegase",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "2848639",
+        "name": "F. Capitanescu"
+      },
+      {
+        "authorId": "1695713",
+        "name": "L. Wehenkel"
+      }
+    ]
+  },
+  {
+    "paperId": "cae85809623517d91f611bd452dcdb1d137cd42d",
+    "url": "https://www.semanticscholar.org/paper/cae85809623517d91f611bd452dcdb1d137cd42d",
+    "title": "Large-scale transmission expansion planning: from zonal results to a nodal expansion plan",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 17,
+    "authors": [
+      {
+        "authorId": "3467805",
+        "name": "S. Lumbreras"
+      },
+      {
+        "authorId": "145310890",
+        "name": "A. Ramos"
+      },
+      {
+        "authorId": "1414093336",
+        "name": "Fernando Banez-Chicharro"
+      },
+      {
+        "authorId": "145870648",
+        "name": "L. Olmos"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "31141601",
+        "name": "Camille Pache"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      }
+    ]
+  },
+  {
+    "paperId": "d4a2262db480865628172efa5662ed3569492697",
+    "url": "https://www.semanticscholar.org/paper/d4a2262db480865628172efa5662ed3569492697",
+    "title": "PGLib OPF Case 6515 RTE",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "da0b5c7f42b8ddfd1b136046caaf85302c225065",
+    "url": "https://www.semanticscholar.org/paper/da0b5c7f42b8ddfd1b136046caaf85302c225065",
+    "title": "Implementation of a Massively Parallel Dynamic Security Assessment Platform for Large-Scale Grids",
+    "venue": "IEEE Transactions on Smart Grid",
+    "year": 2017,
+    "citationCount": 77,
+    "authors": [
+      {
+        "authorId": "3450451",
+        "name": "Ioannis Konstantelos"
+      },
+      {
+        "authorId": "30997734",
+        "name": "Geoffroy Jamgotchian"
+      },
+      {
+        "authorId": "1880385",
+        "name": "Simon Tindemans"
+      },
+      {
+        "authorId": "2686611",
+        "name": "Philippe Duchesne"
+      },
+      {
+        "authorId": "144258382",
+        "name": "S. Cole"
+      },
+      {
+        "authorId": "10391434",
+        "name": "C. Merckx"
+      },
+      {
+        "authorId": "145075357",
+        "name": "G. Strbac"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "db802a491130dec2012d8f682ded65be56c3d364",
+    "url": "https://www.semanticscholar.org/paper/db802a491130dec2012d8f682ded65be56c3d364",
+    "title": "PGLib OPF Case 6468 RTE",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "e3cf4337f3c9cd052534d08254c112c71271ab6b",
+    "url": "https://www.semanticscholar.org/paper/e3cf4337f3c9cd052534d08254c112c71271ab6b",
+    "title": "PGLib OPF Case 6495 RTE",
+    "venue": "",
+    "year": 2017,
+    "citationCount": 0,
+    "authors": [
+      {
+        "authorId": "2860651",
+        "name": "C. Josz"
+      },
+      {
+        "authorId": "51246755",
+        "name": "S. Fliscounakis"
+      },
+      {
+        "authorId": "21742456",
+        "name": "J. Maeght"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      }
+    ]
+  },
+  {
+    "paperId": "e4f44610e449595c85816abdf635242a4f9016e9",
+    "url": "https://www.semanticscholar.org/paper/e4f44610e449595c85816abdf635242a4f9016e9",
+    "title": "A generic customized predictor corrector approach for accelerating EMTP-like simulations",
+    "venue": "2017 IEEE Manchester PowerTech",
+    "year": 2017,
+    "citationCount": 1,
+    "authors": [
+      {
+        "authorId": "31363134",
+        "name": "P. Gibert"
+      },
+      {
+        "authorId": "1403895911",
+        "name": "D. Tromeur-Dervout"
+      },
+      {
+        "authorId": "1741000",
+        "name": "P. Panciatici"
+      },
+      {
+        "authorId": "30734010",
+        "name": "François Beaude"
+      },
+      {
+        "authorId": "2299488399",
+        "name": "Pengbo Wang"
+      },
+      {
+        "authorId": "3198718",
+        "name": "J. Erhel"
+      }
+    ]
+  }
+]
