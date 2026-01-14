@@ -3,45 +3,46 @@
 ## Phase 2: Narrative & Structure
 
 ### 1. Infrastructure & Content Layer
-- [ ] **Dependencies**
-    - [ ] Install `gray-matter` (frontmatter), `react-markdown` (renderer), `@tailwindcss/typography` (styling).
-- [ ] **Content Setup**
-    - [ ] Create `src/content/research/` directory.
-    - [ ] Create utility `src/lib/markdown.ts` for file reading/sorting.
-    - [ ] Create initial markdown: `ctgc.md` (Priority 1).
-    - [ ] Create initial markdown: `radar-dct.md`.
-    - [ ] Create initial markdown: `chess-bot.md`.
+- [x] **Dependencies**
+    - [x] Install `gray-matter` (frontmatter), `react-markdown` (renderer), `@tailwindcss/typography` (styling).
+- [x] **Content Setup**
+    - [x] Create `src/content/research/` directory.
+    - [x] Create utility `src/lib/markdown.ts` for file reading/sorting.
+    - [x] Create initial markdown: `ctgc.md` (Priority 1).
+    - [x] Create initial markdown: `radar-dct.md`.
+    - [x] Create initial markdown: `chess-bot.md`.
     - [ ] Create initial markdown: `cesm-sims.md` (optional/placeholder).
 
 ### 2. Navigation & Routing
-- [ ] **Layout Architecture**
-    - [ ] Create `src/components/NavBar.tsx` (Home, Research, Publications, Contact).
-    - [ ] Update `src/app/layout.tsx` to include `NavBar`.
-    - [ ] Create page stubs:
-        - [ ] `src/app/research/page.tsx`
-        - [ ] `src/app/publications/page.tsx`
-        - [ ] `src/app/contact/page.tsx`
+- [x] **Layout Architecture**
+    - [x] Create `src/components/NavBar.tsx` (Home, Research, Publications, Contact).
+    - [x] Update `src/app/layout.tsx` to include `NavBar`.
+    - [x] Create page stubs:
+        - [x] `src/app/research/page.tsx`
+        - [x] `src/app/publications/page.tsx`
+        - [x] `src/app/contact/page.tsx`
 
 ### 3. Page Implementation
-- [ ] **Home Page (`/`)**
-    - [ ] Update Hero Tagline.
-    - [ ] Add "Featured Visual" section (Placeholder asset).
-    - [ ] Remove full publication list (keep only Featured & Stats).
-- [ ] **Research Page (`/research`)**
-    - [ ] Implement `ResearchList` component.
-    - [ ] Implement markdown rendering with `react-markdown`.
-    - [ ] Style using `prose` (Tailwind Typography).
-- [ ] **Publications Page (`/publications`)**
-    - [ ] Migrate `PublicationList` component here.
-- [ ] **Contact Page (`/contact`)**
-    - [ ] Create simple contact info layout.
+- [x] **Home Page (`/`)**
+    - [x] Update Hero Tagline.
+    - [x] Add "Featured Visual" section (Placeholder asset).
+    - [x] Remove full publication list (keep only Featured & Stats).
+- [x] **Research Page (`/research`)**
+    - [x] Implement `ResearchList` component (integrated in page).
+    - [x] Implement markdown rendering with `react-markdown`.
+    - [x] Style using `prose` (Tailwind Typography).
+- [x] **Publications Page (`/publications`)**
+    - [x] Migrate `PublicationList` component here (Full list logic).
+- [x] **Contact Page (`/contact`)**
+    - [x] Create simple contact info layout.
 
 ### 4. Visuals & Polish
-- [ ] **Featured Visual**
-    - [ ] Source or generate specific placeholder for CTGC.
-- [ ] **Styling**
-    - [ ] Verify gradients and mobile responsiveness.
+- [x] **Featured Visual**
+    - [x] Source or generate specific placeholder for CTGC.
+- [x] **Styling**
+    - [x] Verify gradients and mobile responsiveness.
 
 ---
-**Status**: In Progress
+**Status**: Complete
 **Start Date**: Jan 14, 2026
+**Completion Date**: Jan 14, 2026

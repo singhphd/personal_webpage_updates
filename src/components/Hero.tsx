@@ -22,8 +22,7 @@ export const Hero = () => {
             </div>
 
             <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
-                Radar Scientist specializing in cloud microphysics and precipitation studies in the Andes.
-                Building tools for meteorological data analysis.
+                Atmospheric Scientist & Research Assistant at CU Boulder. Specializing in Cloud Microphysics (CTGCs), Radar Remote Sensing, and Applied Machine Learning.
             </p>
 
             <div className="flex flex-wrap gap-3">
