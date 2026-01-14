@@ -2,8 +2,8 @@ name: Update Data
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # Weekly on Sunday at midnight
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight
+  workflow_dispatch:  # Allow manual trigger
 
 jobs:
   update-data:
@@ -15,13 +15,30 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch Google Scholar Data
+        id: scholar
+        continue-on-error: true
+        run: python scripts/sync-scholar.py
+
+      - name: Fallback to Semantic Scholar
+        if: steps.scholar.outcome == 'failure'
+        run: |
+          echo "Google Scholar sync failed, using Semantic Scholar fallback..."
+          node scripts/sync-publications-semantic.js
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Fetch Publications
-        run: node scripts/sync-publications.js
 
       - name: Fetch GitHub Data
         env:
