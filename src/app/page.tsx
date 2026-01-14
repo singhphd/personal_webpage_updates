@@ -44,7 +44,7 @@ export default function Home() {
         {/* Row 4 - CV Download */}
         <BentoGridItem
           title={
-            <a href="/cv.pdf" target="_blank" className="flex items-center gap-2 hover:underline">
+            <a href="./cv.pdf" target="_blank" className="flex items-center gap-2 hover:underline">
               Download CV <Download className="w-4 h-4" />
             </a>
           }
