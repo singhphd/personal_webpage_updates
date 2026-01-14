@@ -20,11 +20,20 @@
     *   CV -> Linked PDF (`cv.pdf`)
 
 ## Directory Structure
-*   **GEMINI.md**: Instructional context and task tracking.
+*   **AGENTS.md**: Project context and key identifiers (this file).
+*   **GEMINI.md**: Original instructional context.
 *   **Plan.md**: Detailed architectural plan.
-*   **PROGRESS.md**: Step-by-step execution roadmap.
-*   **src/**: Source code (to be created).
-*   **public/**: Static assets (cv.pdf, avatar.jpg).
+*   **PROGRESS.md**: Step-by-step execution roadmap and completion status.
+*   **src/**: Source code (Next.js app with TypeScript).
+*   **public/**: Static assets (cv.pdf, avatar.png).
+*   **scripts/**: Data sync scripts for publications and GitHub repos.
+*   **.github/workflows/**: GitHub Actions for automated data updates and deployment.
 
-## Next Actions
-See `PROGRESS.md` for the granular roadmap.
+## Current Status
+✅ **Project Complete** - Live at https://jvaldivia23.github.io/personal_webpage/
+
+### Recent Fixes (January 13, 2025)
+- Fixed `basePath` configuration for GitHub Pages subdirectory deployment
+- Corrected GitHub repositories (replaced placeholders with actual repos)
+- Fixed publications data (replaced incorrect P. Panciatici papers with correct Jairo M. Valdivia papers)
+- Updated sync scripts to use correct Semantic Scholar Author IDs and GitHub username
