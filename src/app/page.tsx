@@ -1,27 +1,20 @@
 import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
 import { Hero } from "@/components/Hero";
-import { StatsCard } from "@/components/StatsCard";
-import { FeaturedPublication } from "@/components/FeaturedPublication";
 import { FeaturedVisual } from "@/components/FeaturedVisual";
-import { Download, CloudRain, Cpu, BarChart3, ArrowRight } from "lucide-react";
+import { ReadingList } from "@/components/ReadingList";
+import { Download, CloudRain, Cpu, BarChart3, ArrowRight, Cloud } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-black p-4 md:p-8 font-[family-name:var(--font-sans)]">
       <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[auto] gap-6">
-        {/* Row 1: Hero + Stats */}
+        {/* Row 1: Hero */}
         <BentoGridItem
           title={null}
           description={null}
           header={<Hero />}
-          className="md:col-span-2 bg-neutral-50 dark:bg-neutral-900 border-none justify-center min-h-[14rem]"
-        />
-        <BentoGridItem
-          title={null}
-          description={null}
-          header={<StatsCard />}
-          className="md:col-span-1 border-neutral-200 dark:border-neutral-800 min-h-[14rem]"
+          className="md:col-span-3 bg-neutral-50 dark:bg-neutral-900 border-none justify-center min-h-[14rem]"
         />
 
         {/* Row 2: Featured Visual (CTGC) */}
@@ -32,65 +25,75 @@ export default function Home() {
           className="md:col-span-3 p-0 border-none bg-transparent"
         />
 
-        {/* Row 3: Research Focus Areas (Mini Cards) */}
-        <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
-             {/* Card 1 */}
-             <Link href="/research#radar-dct" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
-                <div>
-                    <BarChart3 className="mb-3 h-8 w-8 text-blue-500" />
-                    <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Signal Processing</h3>
-                    <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                        Advanced noise removal in Doppler spectra using Discrete Cosine Transform.
-                    </p>
-                </div>
-                <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
-                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                </div>
-             </Link>
+        {/* Row 3: Research Focus Areas */}
+        <div className="md:col-span-3">
+             <h2 className="text-2xl font-bold text-neutral-800 dark:text-neutral-100 mb-6">
+                Research Focus
+             </h2>
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                 {/* Card 1: Cloud Microphysics */}
+                 <Link href="/research#ctgc" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
+                    <div>
+                        <Cloud className="mb-3 h-8 w-8 text-sky-500" />
+                        <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Cloud Microphysics</h3>
+                        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                            Investigating precipitation formation mechanisms and microphysical processes in clouds.
+                        </p>
+                    </div>
+                    <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
+                        Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                 </Link>
 
-             {/* Card 2 */}
-             <Link href="/research#chess-bot" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
-                <div>
-                    <Cpu className="mb-3 h-8 w-8 text-indigo-500" />
-                    <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Machine Learning</h3>
-                    <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                         Reinforcement learning agents and neural networks for pattern recognition.
-                    </p>
-                </div>
-                <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
-                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                </div>
-             </Link>
+                 {/* Card 2: Signal Processing */}
+                 <Link href="/research#radar-dct" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
+                    <div>
+                        <BarChart3 className="mb-3 h-8 w-8 text-blue-500" />
+                        <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Signal Processing</h3>
+                        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                            Weather radar signal processing techniques.  Advanced noise removal in spectral domain using Discrete Cosine Transform.
+                        </p>
+                    </div>
+                    <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
+                        Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                 </Link>
 
-             {/* Card 3 */}
-             <Link href="/research" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
-                <div>
-                    <CloudRain className="mb-3 h-8 w-8 text-teal-500" />
-                    <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Climate Modeling</h3>
-                    <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                        Simulations of precipitation types in the Andes using CESM.
-                    </p>
-                </div>
-                <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
-                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                </div>
-             </Link>
+                 {/* Card 4: Climate Modeling */}
+                 <Link href="/research#climate-modeling" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
+                    <div>
+                        <CloudRain className="mb-3 h-8 w-8 text-teal-500" />
+                        <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Climate Modeling</h3>
+                        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                            Evolution of precipitation types in climate warming scenarios and potential solutions using CESM.
+                        </p>
+                    </div>
+                    <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
+                        Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                 </Link>
+
+                 {/* Card 3: Machine Learning */}
+                 <Link href="/research#chess-bot" className="group flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-blue-200 hover:shadow-md dark:border-neutral-800 dark:bg-zinc-900/50 dark:hover:border-blue-900/50">
+                    <div>
+                        <Cpu className="mb-3 h-8 w-8 text-indigo-500" />
+                        <h3 className="mb-2 font-bold text-neutral-800 dark:text-neutral-100">Machine Learning</h3>
+                        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                             PyTorch implementations of neural networks.
+                        </p>
+                    </div>
+                    <div className="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 opacity-0 transition-opacity group-hover:opacity-100">
+                        Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                 </Link>
+              
+             </div>
         </div>
 
-        {/* Row 4: Featured Publications */}
-        <BentoGridItem
-          title={null}
-          description={null}
-          header={<FeaturedPublication type="most-cited" />}
-          className="md:col-span-3 p-0 border-none bg-transparent"
-        />
-        
-        <BentoGridItem
-          title={null}
-          description={null}
-          header={<FeaturedPublication type="recommended" />}
-          className="md:col-span-3 p-0 border-none bg-transparent"
-        />
+        {/* Row 4: Reading List */}
+        <div className="md:col-span-3">
+             <ReadingList />
+        </div>
 
         {/* Row 5: CV Download */}
         <BentoGridItem

@@ -42,6 +42,25 @@
 - [x] **Styling**
     - [x] Verify gradients and mobile responsiveness.
 
+### 5. Refinements (Jan 14)
+- [x] **Home Page Redesign**
+    - [x] Remove "Stats" box to declutter.
+    - [x] Expand "Hero" section to full width.
+    - [x] Add welcoming header ("Welcome to Jairo's Webpage").
+- [x] **Publications Page**
+    - [x] Add "Google Stats" box as a sticky sidebar.
+    - [x] Rename "Impact" to "Google Stats".
+
+### 6. Content & Layout Revamp (Jan 14 - Part 2)
+- [x] **Home Page Redesign (Standard)**
+    - [x] Update Hero with full bio text.
+    - [x] Add explicit "Research Focus" section with 4 topic boxes (Cloud Microphysics added).
+    - [x] Create "Reading List" section (Nature News style).
+    - [x] Implement Markdown backend for reading posts (`src/content/reading/`).
+- [x] **Publications Page Update**
+    - [x] Move "Most Cited" and "Recommended" highlights to this page.
+    - [x] Arrange layout with Highlights + Full List in main column, Stats in sidebar.
+
 ---
 **Status**: Complete
 **Start Date**: Jan 14, 2026

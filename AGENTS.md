@@ -24,6 +24,7 @@
 
 ## Directory Structure
 *   **AGENTS.md**: Project context and key identifiers (this file).
+*   **MANUAL_UPDATES.md**: Guide for the user on how to edit text, images, and content.
 *   **GEMINI.md**: Original instructional context.
 *   **Plan.md**: Detailed architectural plan.
 *   **PROGRESS.md**: Step-by-step execution roadmap and completion status.
@@ -47,9 +48,13 @@
 ## Current Status
 ✅ **Project Complete** - Live at https://jvaldivia23.github.io/personal_webpage/
 
-### Recent Updates (January 13, 2025)
-- **Google Scholar Integration**: Added Python script to fetch publications and stats from Google Scholar
-- **Dual Featured Publications**: "Most Cited" (auto-detected) + "Recommended" (user-selected via highlights.json)
+### Recent Updates (January 14, 2025 - Part 3)
+- **3D CTGC Project Integration**: Hosted as a standalone featured project at `/projects/3D_CTGC_web/index.html`.
+- **Active Research Hero**: Added a prominent "Active Research" section to the Research page featuring the 3D visualization.
+- **Home Page Standardisation**: Switched to a traditional academic bio layout.
+- **Research Focus Grid**: Explicit 4-box grid (Cloud Microphysics, Signal Processing, ML, Climate Modeling).
+- **Reading List**: Added a "Reading" section for news and comments on recent research (Markdown-powered).
+- **Publications Page**: Now houses the "Featured" and "Recommended" highlights along with the full list and stats.
 - **Improved Stats Display**: Shows 232 citations, h-index 8, with link to Google Scholar profile
 - **Layout Redesign**: Publications-focused layout with stacked featured cards
 - **Fallback System**: Google Scholar → Semantic Scholar fallback in GitHub Actions

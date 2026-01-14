@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Radar 3D Tracking of CTGCs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="main-title">Multi-Radar 3D Tracking of <span class="highlight-text">CTGCs</span></h1>
+            <p class="subtitle">J. Valdivia<sup>1</sup>, K. Friedrich<sup>1</sup>, T. Zaremba<sup>2</sup>, S.
+                Tessendorf<sup>3</sup></p>
+            <div class="subtitle" style="font-size: 0.9rem; margin-top: 10px;">
+                <p><sup>1</sup> University of Colorado, Boulder &nbsp;•&nbsp; <sup>2</sup> University of Washington
+                    &nbsp;•&nbsp; <sup>3</sup>
+                    National Center for Atmospheric Research, Boulder</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>Explore</span>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: The Challenge -->
+        <section id="challenge" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2>Cloud Top Generating Cells (CTGCs)</h2>
+                </div>
+                <div class="grid-layout">
+                    <div class="text-content">
+                        <h3>The "Invisible" Snow Producers</h3>
+                        <p><strong>Cloud Top Generating Cells (CTGCs)</strong> are crucial but elusive high-altitude
+                            phenomena. They act as the engines of precipitation, yet they remain largely misunderstood.
+                        </p>
+                        <ul class="feature-list">
+                            <li><strong>The Problem:</strong> Often too small (<1km) for standard operational radars and
+                                    numerical weather forecast models to resolve.</li>
+                            <li><strong>The Discovery:</strong> New research reveals distinct lifecycle phases
+                                (Initiation → Mature → Dissipation) and proves some cells are larger than previously
+                                thought.</li>
+                        </ul>
+                    </div>
+                    <div class="visual-content card-glass">
+                        <div class="pdf-wrapper fig1-ratio">
+                            <iframe src="figures/figure01_lifecycle.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                class="pdf-figure" title="Figure 1">
+                                <p>Your browser does not support iframes.</p>
+                            </iframe>
+                        </div>
+                        <p class="caption">Figure 1: Lifecycle of a Cloud Top Generating Cell Population.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Methodology -->
+        <section id="methodology" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2>Tracking a single CTGC</h2>
+                </div>
+                <div class="grid-layout reverse">
+                    <div class="text-content">
+                        <h3>We want to observe the 3D Structure</h3>
+                        <p>To see what was previously invisible, we employed a multi-angle approach using a triangle of
+                            radars. By combining the viewpoints, we can reconstruct the volume.</p>
+                        <ul class="feature-list">
+                            <li><strong>Target:</strong> Following a single CTGC over time, using maximum reflectivity
+                                method in X-Band.</li>
+                            <li><strong>Tools:</strong> 3-Radar Combined Observation (X-Band, C-Band, S-Band).</li>
+                            <li><strong>Scan Strategy:</strong> Sincronized volume scans every 6 minutes (aprox. 18
+                                sweeps per radar in one volume).</li>
+                        </ul>
+                    </div>
+                    <div class="visual-content card-glass">
+                        <div class="image-group">
+                            <img src="figures/figure03_3D_radars.png" alt="3D Radar Beams" class="responsive-img">
+                            <div class="pdf-wrapper fig2-ratio">
+                                <iframe
+                                    src="figures/figure02_GC_path_map.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                    class="pdf-figure" title="Figure 2">
+                                    <p>Your browser does not support iframes.</p>
+                                </iframe>
+                            </div>
+                        </div>
+                        <p class="caption">Figure 2 & 3: Experimental setup and single CTGC path.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Data Processing -->
+        <section id="processing" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2>Data Processing</h2>
+                </div>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="icon-box">📡</div>
+                        <h4>Raw Radar Data</h4>
+                        <p>X, C, S Band inputs</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <div class="icon-box">⚖️</div>
+                        <h4>Normalization</h4>
+                        <p>Reflectivity Field Deviations</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <div class="icon-box">🧊</div>
+                        <h4>3D Gridding</h4>
+                        <p>High-res (0.1km)</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <div class="icon-box">✨</div>
+                        <h4>Smooth Model</h4>
+                        <p>Gaussian Smoothing</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p>Different frequencies and different angles of incidence produce different radar returns from ice
+                        particles. We created a <strong>"Normalized
+                            Reflectivity Field"</strong> to merge bands seamlessly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Core Result -->
+        <section id="results" class="content-section highlight-section">
+            <div class="container">
+                <div class="section-header center-header">
+                    <span class="section-number">04</span>
+                    <h2>The Core Result</h2>
+                </div>
+                <div class="hero-visual">
+                    <h3>4D Evolution: Structure & Detachment</h3>
+                    <p>Visualization of a single cell from Initiation to Dissipation reveals complex shapes and
+                        Preferential Sedimentation.</p>
+                    <div class="visual-content card-glass large-card">
+                        <div class="pdf-wrapper large-pdf-wrapper fig4-ratio">
+                            <iframe src="figures/figure04_GC3D.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                class="pdf-figure large-pdf" title="Figure 4">
+                                <p>Your browser does not support iframes.</p>
+                            </iframe>
+                        </div>
+                        <p class="caption">Figure 4: Time-lapse of the 3D isosurface showing the cell's evolution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Analysis -->
+        <section id="analysis" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2>Analysis & Future Work</h2>
+                </div>
+                <div class="grid-layout">
+                    <div class="text-content">
+                        <h3>Tracking Fall-Streaks</h3>
+                        <p>High-res 3D fields allow precise tracking of the fall-streak position. This opens the door
+                            for microphysical analysis.</p>
+                        <ul class="feature-list">
+                            <li><strong>Future Goal:</strong> Use dual-frequency differences + T-Matrix methods to
+                                identify particle types.</li>
+                            <li><strong>Impact:</strong> Better understanding of microphysical impacts of CTGCs on
+                                precipitation. This opens the door for parameterization for operational weather
+                                forecasting models.</li>
+                        </ul>
+                    </div>
+                    <div class="visual-content card-glass">
+                        <div class="pdf-wrapper fig5-ratio">
+                            <iframe
+                                src="figures/figure05_gc3_cross_section_anomaly.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                class="pdf-figure" title="Figure 5">
+                                <p>Your browser does not support iframes.</p>
+                            </iframe>
+                        </div>
+                        <p class="caption">Figure 5: Vertical profile showing the descent of the fall-streak.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Multi-Radar 3D Tracking of CTGCs Infographic &copy; 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

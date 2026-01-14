@@ -11,7 +11,7 @@ export const StatsCard = () => {
         <div className="flex flex-col h-full justify-center gap-3 p-2">
             {/* Title */}
             <div className="text-center">
-                <h3 className="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Impact</h3>
+                <h3 className="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Google Stats</h3>
             </div>
 
             {/* Stats Grid */}

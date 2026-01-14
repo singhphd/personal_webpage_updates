@@ -8,22 +8,24 @@ export const Hero = () => {
             <div className="flex items-center space-x-4">
                 {/* Placeholder for avatar - user can replace with avatar.jpg in public */}
                 <div className="w-16 h-16 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center overflow-hidden border border-neutral-300 dark:border-neutral-700">
-                    <Image src="/avatar.png" alt="JValdivia23" width={64} height={64} className="object-cover" />
+                    <Image src="/avatar.png" alt="JValdivia" width={64} height={64} className="object-cover" />
                     {/* Fallback if no image: <span className="text-2xl font-bold">JV</span> */}
                 </div>
                 <div>
                     <h1 className="text-2xl font-bold text-neutral-800 dark:text-neutral-100">
-                        Jairo M. Valdivia
+                        Welcome to Jairo's Webpage
                     </h1>
-                    <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                        Ph.D. Student at CU Boulder (ATOC)
-                    </p>
                 </div>
             </div>
 
-            <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
-                Atmospheric Scientist & Research Assistant at CU Boulder. Specializing in Cloud Microphysics (CTGCs), Radar Remote Sensing, and Applied Machine Learning.
-            </p>
+            <div className="space-y-4 text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
+                <p>
+                    I am a Ph.D. candidate in the Department of Atmospheric and Oceanic Sciences at the University of Colorado Boulder.
+                </p>
+                <p>
+                    My research is focused in Cloud Microphysics, Radar Meteorology, and Numerical Modeling to better understand precipitation processes in complex terrain. I am also interested in Machine Learning applications in Atmospheric Science, or just for fun!
+                </p>
+            </div>
 
             <div className="flex flex-wrap gap-3">
                 <Link
