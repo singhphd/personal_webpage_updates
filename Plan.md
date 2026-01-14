@@ -1,1 +1,61 @@
-Project Architecture: The "Living" Portfolio1. Executive SummaryThe goal is to build a "Source of Truth" personal website. Instead of manually editing HTML every time you publish a paper or push code, the website will act as a visualization layer for data that already exists.The Core Philosophy: Content is data. The site fetches this data at build time to generate a static, SEO-friendly, blazing-fast website hosted on GitHub Pages.2. Technology Stack SelectionTo achieve a "high-end" feel with automation, we will use the Modern React Stack:Framework: Next.js (using the App Router). It allows for React components but exports to static HTML suitable for GitHub Pages.Styling: Tailwind CSS. Essential for a clean, typographic, grid-based modern aesthetic.Animations: Framer Motion. Adds subtle entry animations (essential for that "premium" feel).Hosting: GitHub Pages. Free, fast, and integrated with your code.Automation: GitHub Actions. This is the engine. It will run scripts to fetch your data and rebuild the site.Language: TypeScript. For robustness and maintainability.3. Data Strategy (The "Self-Updating" Engine)This is the differentiator. We will separate Data fetching from UI rendering.A. GitHub IntegrationMethod: GitHub GraphQL API.Automation: At build time, the site queries your pinned repositories to get star counts, descriptions, and languages.B. Publication Strategy (Semantic Scholar)Why not ResearchGate? ResearchGate (like Google Scholar) does not have an official API and aggressively blocks automated access.The Solution: Semantic Scholar API.It is a free, open API provided by the Allen Institute for AI.It provides high-quality data: Paper titles, venues, years, and citation counts.It is stable and does not require complex scraping logic.Workflow:A GitHub Action runs weekly.It calls the Semantic Scholar API using your Author ID.It saves the JSON response (publications + metrics) to src/data/publications.json.It commits this file to the repo, triggering a site rebuild.C. CV Integration (External Source)Since you maintain your CV in a separate LaTeX project, we will not generate it here.Strategy: The website will simply link to the latest PDF artifact from your LaTeX repository (or a manually uploaded file in public/cv.pdf).The website serves as the "Digital Twin" of your CV, presenting the same data in an interactive format.4. Implementation StepsPhase 1: Infrastructure SetupInitialize Repository: Create a new GitHub repo (e.g., username.github.io).Scaffold Next.js: Run npx create-next-app@latest with TypeScript and Tailwind.Configure GitHub Pages: Set output: 'export' in next.config.js to enable static HTML generation.Phase 2: The Data Pipeline (Backend-for-Frontend)Create the Publication Fetcher: Write a Node.js or Python script (scripts/sync-publications.js) that hits the https://api.semanticscholar.org/graph/v1/author/{AUTHOR_ID} endpoint.Create the GitHub Fetcher: Write a utility function to fetch pinned repos via GitHub API.Setup GitHub Actions: Create a workflow file (.github/workflows/update-data.yml) that:Runs on a schedule (e.g., every Sunday at midnight).Runs the fetch scripts.Commits changes if new papers are found.Phase 3: UI Design & DevelopmentLayout Architecture: Create a "Bento Box" grid layout. This is currently the standard for high-end developer portfolios (modular, grid-based cards).Components:HeroSection: Bio, photo, and social links (ResearchGate, Google Scholar, LinkedIn).StatsCard: Live citation count (fetched from Semantic Scholar) and GitHub contributions.ProjectCard: Dynamically loaded from GitHub data.PublicationList: A clean, filterable list rendered from the publications.json.CVDownloadButton: A prominent button in the nav/hero that links to your external PDF.Typography: Use a modern sans-serif variable font (e.g., Inter or Geist) for a clean academic look.Phase 4: DeploymentDeploy Action: Configure the standard nextjs.yml workflow provided by GitHub Actions to build and deploy to the gh-pages branch.5. Maintenance PlanContent Updates: Edit data/config.ts for bio/talks changes.Code/Paper Updates: Zero interaction required. The GitHub Action handles this weekly.CV Updates: When you update your separate LaTeX project, copy the PDF here (or automate the cross-repo push).
+This is a strong start. Your webpage is clean, minimalist, and effectively communicates your academic metrics (h-index, citation count), which is excellent for a PhD candidate.
+
+However, when comparing it to **Prof. Will Chapman’s** site, the key difference is **"Narrative vs. Archive."** Your site currently functions as a *list of past outputs* (an archive), whereas Chapman’s site tells a *story* about his research identity.
+
+Based on your profile as a PhD candidate at CU Boulder specializing in **CTGCs, Radar, and ML**, here is an objective analysis and specific feedback to bridge that gap.
+
+### 1. The "Headline" Problem
+
+* **Current State:** Your tagline is "Radar Scientist specializing in cloud microphysics...".
+* **Comparison:** Chapman’s header immediately broadens his scope: "Atmospheric Science and **Machine Learning** Research."
+* **Recommendation:** Your profile shows you are heavily involved in **PyTorch, Machine Learning (Chess bots), and Python tool development**. Your current tagline undersells your computational side.
+* *Fix:* Update your tagline to reflect your dual focus. Example: *"Atmospheric Scientist & Research Assistant at CU Boulder. Specializing in Cloud Microphysics (CTGCs), Radar Remote Sensing, and Applied Machine Learning."*
+
+
+
+### 2. Highlighting "Active" Research (The "What I Do Now" Section)
+
+* **Current State:** You list published papers (mostly from your time at IGP or early PhD).
+* **Missing Context:** You are currently working on **Cloud Top Generating Cells (CTGCs)**, **CESM simulations**, and **Discrete Cosine Transform (DCT)** for radar noise removal. These are nowhere to be found on the main view.
+* **Recommendation:** Create a "Current Projects" or "Research Focus" section (similar to Chapman’s "Research" tab).
+* **Project A:** *Cloud Top Generating Cells (CTGCs).* Briefly mention your global database project and the 3D shape tracking infographic you are designing.
+* **Project B:** *Advanced Radar Data Processing.* Highlight the `radar-dct-smoothing` repo here. Explain *why* it matters (removing noise in spectral domain).
+* **Project C:** *Climate Simulations.* Mention your work with **CESM** and mountain albedo enhancement. This shows you are not just a "radar guy" but also a modeler.
+
+
+
+### 3. Showcasing Technical Skills (Code as a First-Class Citizen)
+
+* **Current State:** You link to GitHub repos like `MIRA-35c-Peru`.
+* **Comparison:** Chapman explicitly lists "Code" and "Resources" as major sections, with explanations of *what* the code does (e.g., "MJOcast").
+* **Recommendation:** Your profile indicates you are proficient in **Python, PyTorch, VSCode, and Zotero**.
+* Add a **"Software & Tools"** section.
+* Move your **Chess Bot** project from the background to the foreground if you want to demonstrate general ML competency. A "Side Projects" section featuring your AI chess bot (PyTorch) proves you can build complex systems beyond just weather analysis.
+
+
+
+### 4. Visuals and "The Hook"
+
+* **Current State:** The site is text-heavy.
+* **Recommendation:** You have access to visually striking data—**radar scans of CTGCs** or **CESM simulation plots**.
+* Add a "Featured Visual" or a carousel at the top. A loop of a radar scan showing a CTGC would immediately capture the visitor's attention and define your niche better than text.
+
+
+
+### Summary of Changes
+
+| Feature | Your Site (Current) | Suggested Upgrade (PhD Portfolio) |
+| --- | --- | --- |
+| **Focus** | Past Papers (IGP Era) | **Current Research (CU Boulder Era)** |
+| **Tagline** | Radar Scientist | **Atmospheric Scientist & ML Developer** |
+| **Content** | List of Links | **Short Summaries of Active Projects** |
+| **Tech** | Implicit (via Repos) | **Explicit Skill List (PyTorch, CESM, Python)** |
+
+By making these changes, you shift the site from saying "Here is what I did in Peru" to "Here is the advanced research I am leading at CU Boulder."
+
+---
+
+For a technical guide on implementing these content sections, this tutorial covers customizing GitHub Pages to include project portfolios:
+[How to make a personal website with github pages](https://www.youtube.com/watch?v=qZsgPgGdOzQ)
+
+This video is relevant because it demonstrates how to move beyond the basic template and create custom sections for "Projects" or "Research," which is exactly what your site needs to match the narrative style of the comparison site.
