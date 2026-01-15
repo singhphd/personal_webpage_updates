@@ -48,7 +48,9 @@
 ## Current Status
 ✅ **Project Complete** - Live at https://jvaldivia23.github.io/personal_webpage/
 
-### Recent Updates (January 14, 2025 - Part 3)
+### Recent Updates (January 14, 2025 - Part 4)
+- **Repository Cleanup**: Removed temporary build artifacts and redundant source folders to maintain a clean codebase.
+- **Documentation Update**: Streamlined `README.md` to focus on the live site and essential developer info.
 - **3D CTGC Project Integration**: Hosted as a standalone featured project at `/projects/3D_CTGC_web/index.html`.
 - **Active Research Hero**: Added a prominent "Active Research" section to the Research page featuring the 3D visualization.
 - **Home Page Standardisation**: Switched to a traditional academic bio layout.

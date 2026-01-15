@@ -1,55 +1,51 @@
 # Personal Webpage - Jairo M. Valdivia
 
-A living portfolio/personal website built with Next.js, Tailwind CSS, and GitHub Actions.
+A living portfolio and research dashboard for Jairo M. Valdivia, Ph.D. Student in Atmospheric and Oceanic Sciences at CU Boulder.
+
+🔴 **Live Site:** [https://jvaldivia23.github.io/personal_webpage/](https://jvaldivia23.github.io/personal_webpage/)
 
 ![Build Status](https://github.com/JValdivia23/personal_webpage/actions/workflows/deploy.yml/badge.svg)
 
+## 🌟 Features
+
+*   **Research Dashboard:** Interactive visualization of active projects (e.g., 3D CTGC Tracking).
+*   **Automated Publications:** Syncs daily with Google Scholar and Semantic Scholar.
+*   **Reading List:** A "News & Views" style feed for scientific commentary, powered by Markdown.
+*   **Active Stats:** Real-time citation counts and h-index display.
+
 ## 🚀 Getting Started
 
-First, run the development server:
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+2.  **Run development server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Project Structure
 
-## 🏗 Architecture
+*   `src/app`: Next.js App Router pages (Home, Research, Publications, Reading).
+*   `src/content/reading`: Markdown files for the Reading List.
+*   `src/data`: JSON data for publications and stats.
+*   `public/projects`: Standalone web projects (e.g., 3D CTGC visualization).
+*   `scripts`: Python/Node.js scripts for fetching external data.
 
-This project is designed to be self-updating. It acts as a visualization layer for data fetched from external sources.
+## 🛠 Manual Updates
 
-- **Frontend**: Next.js 15 (App Router), Tailwind CSS, Framer Motion.
-- **Components**: `src/components/ui/BentoGrid.tsx` (Core layout), `src/components/*` (Content cards).
-- **Data Source**: JSON files in `src/data/`.
-
-## 🔄 Data Pipeline
-
-The website relies on data fetching scripts to stay up-to-date without manual HTML edits.
-
-### 1. Publications
-- **Source**: [Semantic Scholar API](https://www.semanticscholar.org/product/api)
-- **Script**: `scripts/sync-publications.js`
-- **Output**: `src/data/publications.json`
-
-### 2. GitHub Projects
-- **Source**: GitHub GraphQL API
-- **Script**: `scripts/sync-github.js`
-- **Output**: `src/data/github.json`
-- **Note**: Requires `GITHUB_TOKEN` (handled automatically in GitHub Actions).
+While most data is automated, some content is curated manually. See [MANUAL_UPDATES.md](MANUAL_UPDATES.md) for a complete guide on how to edit:
+*   Bio & Contact Info
+*   Featured/Active Research
+*   Reading List Articles
+*   Recommended Papers
 
 ## 🤖 Automation
 
-There are two main GitHub Actions workflows:
-
-1. **Update Data** (`.github/workflows/update-data.yml`): Runs weekly (Sunday) to fetch new papers and pinned repos. It commits changes back to the repo.
-2. **Deploy** (`.github/workflows/deploy.yml`): Runs on every push to `main` (including the automated data update) to rebuild and deploy the site to GitHub Pages.
-
-## 🛠 Maintenance
-
-- **Updating Bio/Links**: Edit `src/components/Hero.tsx`.
-- **Updating CV**: Replace `/public/cv.pdf` with a new file.
-- **Manual Data Update**: Go to the "Actions" tab in GitHub, select "Update Data", and click "Run workflow".
+This repo uses **GitHub Actions** to stay "living":
+*   **Weekly Sync:** Fetches latest citations and papers.
+*   **Auto-Deploy:** Builds and deploys to GitHub Pages on every push.
