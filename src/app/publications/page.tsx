@@ -1,23 +1,72 @@
+'use client';
+
+import { useState } from 'react';
 import publications from "@/data/publications.json";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown, Calendar, Award } from "lucide-react";
 import { StatsCard } from "@/components/StatsCard";
 import { GithubCard } from "@/components/GithubCard";
 import { FeaturedPublication } from "@/components/FeaturedPublication";
 
 export default function PublicationsPage() {
-    // Sort by year (descending), then citation count (descending)
+    const [sortBy, setSortBy] = useState<'year' | 'citations'>('year');
+    const [visibleCount, setVisibleCount] = useState(10);
+
+    // Sort publications based on selection
     const sortedPubs = [...publications].sort((a, b) => {
-        const yearDiff = (b.year || 0) - (a.year || 0);
-        if (yearDiff !== 0) return yearDiff;
-        return (b.citationCount || 0) - (a.citationCount || 0);
+        if (sortBy === 'year') {
+            const yearDiff = (b.year || 0) - (a.year || 0);
+            if (yearDiff !== 0) return yearDiff;
+            return (b.citationCount || 0) - (a.citationCount || 0);
+        } else {
+            const citeDiff = (b.citationCount || 0) - (a.citationCount || 0);
+            if (citeDiff !== 0) return citeDiff;
+            return (b.year || 0) - (a.year || 0);
+        }
     });
+
+    const visiblePubs = sortedPubs.slice(0, visibleCount);
+    const hasMore = visibleCount < sortedPubs.length;
 
     return (
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-            <h1 className="mb-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                Publications
-            </h1>
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                    Publications
+                </h1>
+                
+                {/* Sort Toggle */}
+                <div className="flex items-center gap-2 p-1 bg-gray-100 dark:bg-zinc-800 rounded-lg w-fit self-start md:self-auto">
+                    <button
+                        onClick={() => {
+                            setSortBy('year');
+                            setVisibleCount(10); // Reset count when sorting
+                        }}
+                        className={`flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-all ${
+                            sortBy === 'year'
+                                ? 'bg-white dark:bg-zinc-700 text-blue-600 dark:text-blue-400 shadow-sm'
+                                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+                        }`}
+                    >
+                        <Calendar className="w-4 h-4" />
+                        Newest
+                    </button>
+                    <button
+                        onClick={() => {
+                            setSortBy('citations');
+                            setVisibleCount(10); // Reset count when sorting
+                        }}
+                        className={`flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-all ${
+                            sortBy === 'citations'
+                                ? 'bg-white dark:bg-zinc-700 text-blue-600 dark:text-blue-400 shadow-sm'
+                                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+                        }`}
+                    >
+                        <Award className="w-4 h-4" />
+                        Cited
+                    </button>
+                </div>
+            </div>
             
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 {/* Main Content: Publication List */}
@@ -28,9 +77,17 @@ export default function PublicationsPage() {
                         <FeaturedPublication type="most-cited" />
                     </div>
 
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">All Publications</h2>
+                    <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 pb-2">
+                        <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                            {sortBy === 'year' ? 'All Publications' : 'Most Impactful'}
+                        </h2>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                            {visiblePubs.length} of {sortedPubs.length}
+                        </span>
+                    </div>
+
                     <div className="space-y-4">
-                        {sortedPubs.map((pub) => (
+                        {visiblePubs.map((pub) => (
                             <Link
                                 key={pub.paperId}
                                 href={pub.url}
@@ -65,6 +122,19 @@ export default function PublicationsPage() {
                             </Link>
                         ))}
                     </div>
+
+                    {/* See More Button */}
+                    {hasMore && (
+                        <div className="mt-8 flex justify-center">
+                            <button
+                                onClick={() => setVisibleCount(prev => prev + 10)}
+                                className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-6 py-2.5 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-50 dark:border-gray-800 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 group"
+                            >
+                                <ChevronDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+                                See more publications
+                            </button>
+                        </div>
+                    )}
                 </div>
 
                 {/* Sidebar: Stats & GitHub */}

@@ -2,7 +2,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
 import { Hero } from "@/components/Hero";
 import { FeaturedVisual } from "@/components/FeaturedVisual";
 import { ReadingList } from "@/components/ReadingList";
-import { Download, CloudRain, Cpu, BarChart3, ArrowRight, Cloud } from "lucide-react";
+import { Download, CloudRain, Cpu, BarChart3, ArrowRight, Cloud, FileText } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -95,15 +95,20 @@ export default function Home() {
              <ReadingList />
         </div>
 
-        {/* Row 5: CV Download */}
+        {/* Row 5: CV Access */}
         <BentoGridItem
           title={
-            <a href="./cv.pdf" target="_blank" className="flex items-center gap-2 hover:underline">
-              Download CV <Download className="w-4 h-4" />
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+               <Link href="/cv" className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition-all shadow-md active:scale-95">
+                 View Online <FileText className="w-4 h-4" />
+               </Link>
+               <a href="/personal_webpage/cv.pdf" download className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-blue-200 dark:border-blue-800 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 font-bold text-sm hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all">
+                 Download PDF <Download className="w-4 h-4" />
+               </a>
+            </div>
           }
           description="Get the full academic curriculum vitae (PDF)."
-          className="md:col-span-3 h-28 bg-blue-50 dark:bg-slate-900/50 border-blue-100 dark:border-blue-900/50 content-center items-center justify-center text-center"
+          className="md:col-span-3 h-auto py-8 bg-blue-50 dark:bg-slate-900/50 border-blue-100 dark:border-blue-900/50 items-center justify-center text-center"
         />
 
       </BentoGrid>

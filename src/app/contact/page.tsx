@@ -51,17 +51,23 @@ export default function ContactPage() {
              </div>
            </div>
 
-           <div className="flex items-center gap-4">
-             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-50 dark:bg-green-900/20">
-               <FileText className="h-5 w-5 text-green-600 dark:text-green-400" />
-             </div>
-             <div>
-               <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Curriculum Vitae</p>
-               <a href="/personal_webpage/cv.pdf" target="_blank" className="font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
-                 Download PDF
-               </a>
-             </div>
-           </div>
+            <div className="flex items-center gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-50 dark:bg-green-900/20">
+                <FileText className="h-5 w-5 text-green-600 dark:text-green-400" />
+              </div>
+              <div>
+                <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Curriculum Vitae</p>
+                <div className="flex gap-4 items-center">
+                  <Link href="/cv" className="font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
+                    View Online
+                  </Link>
+                  <span className="text-gray-300 dark:text-gray-700">|</span>
+                  <a href="/personal_webpage/cv.pdf" download className="font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
+                    Download PDF
+                  </a>
+                </div>
+              </div>
+            </div>
            
            <div className="flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-50 dark:bg-amber-900/20">
