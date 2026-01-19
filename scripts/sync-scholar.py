@@ -88,6 +88,10 @@ def process_publications(author, highlights):
         # Try to get a proper URL (prefer pub_url, fallback to eprint)
         url = pub.get("pub_url", "") or pub.get("eprint_url", "")
         
+        # Fallback: Construct Google Scholar URL if no direct link
+        if not url:
+            url = f"https://scholar.google.com/citations?view_op=view_citation&hl=en&user={SCHOLAR_ID}&citation_for_view={pub.get('author_pub_id')}"
+        
         pub_data = {
             "paperId": pub.get("author_pub_id", ""),
             "url": url,

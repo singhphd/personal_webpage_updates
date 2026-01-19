@@ -8,9 +8,19 @@ import { StatsCard } from "@/components/StatsCard";
 import { GithubCard } from "@/components/GithubCard";
 import { FeaturedPublication } from "@/components/FeaturedPublication";
 
+import stats from "@/data/stats.json";
+
 export default function PublicationsPage() {
     const [sortBy, setSortBy] = useState<'year' | 'citations'>('year');
     const [visibleCount, setVisibleCount] = useState(10);
+    
+    // Format last updated date
+    const lastUpdated = new Date(stats.googleScholar.lastUpdated).toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
 
     // Sort publications based on selection
     const sortedPubs = [...publications].sort((a, b) => {
@@ -135,6 +145,14 @@ export default function PublicationsPage() {
                             </button>
                         </div>
                     )}
+
+                    {/* Disclaimer */}
+                    <div className="mt-12 pt-6 border-t border-gray-100 dark:border-gray-800">
+                        <p className="text-xs text-center text-gray-400 dark:text-gray-500">
+                            Data automatically generated from Google Scholar. Duplicates may occur. 
+                            Last updated: {lastUpdated}
+                        </p>
+                    </div>
                 </div>
 
                 {/* Sidebar: Stats & GitHub */}

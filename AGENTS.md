@@ -41,8 +41,8 @@
 *   **highlights.json**: User config for "Recommended" publication (easily editable)
 
 ## Sync Scripts
-*   **sync-scholar.py**: Primary - Fetches from Google Scholar using `scholarly` library
-*   **sync-publications-semantic.js**: Backup - Fetches from Semantic Scholar API
+*   **sync-scholar.py**: Primary - Fetches from Google Scholar using `scholarly` library (Generates fallback links if direct URLs missing)
+*   **sync-publications-semantic.js**: Backup - Fetches from Semantic Scholar API (Merges with existing data)
 *   **sync-github.js**: Fetches pinned repos from GitHub GraphQL API
 
 ## Developer & Agent Guide

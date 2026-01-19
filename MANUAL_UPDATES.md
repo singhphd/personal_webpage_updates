@@ -22,6 +22,12 @@ This guide outlines where to find and modify text, images, and content to person
     *   **Source**: `src/data/publications.json` (Synced via script).
     *   **To run sync**: `python3 scripts/sync-scholar.py` (requires setup) or manually edit the JSON file if needed.
 
+**Managing Duplicates:**
+Since data is merged from multiple sources, duplicates may occur. To fix:
+1. Open `src/data/publications.json`.
+2. Manually remove the duplicate/lower-quality entry.
+3. Commit and push the change.
+
 ## 4. Reading List (News & Views)
 You can write original articles or comments on recent research here. Each article is a separate Markdown file.
 
