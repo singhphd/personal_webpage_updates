@@ -104,8 +104,27 @@ async function fetchPublications() {
             if (pub.citationCount > existing.citationCount) {
                 existing.citationCount = pub.citationCount;
             }
-            // Preserve highlighted flag and other manual fields
-            mergedPubs.set(key, { ...pub, ...existing, citationCount: Math.max(pub.citationCount, existing.citationCount || 0) });
+            
+            // CRITICAL FIX: If existing URL is empty but fetched has one, USE IT.
+            // Also prefer DOI links over generic ones.
+            if ((!existing.url && pub.url) || (pub.url && pub.url.includes('doi.org') && !existing.url.includes('doi.org'))) {
+                existing.url = pub.url;
+            }
+            
+            // Update venue if existing is empty
+            if (!existing.venue && pub.venue) {
+                existing.venue = pub.venue;
+            }
+
+            // Preserve highlighted flag and other manual fields, but use updated metadata
+            const updatedPub = { ...pub };
+            if (existing.highlighted) updatedPub.highlighted = true;
+            
+            // Ensure we keep the best citation count and URL
+            updatedPub.citationCount = Math.max(pub.citationCount, existing.citationCount || 0);
+            if (!updatedPub.url && existing.url) updatedPub.url = existing.url;
+            
+            mergedPubs.set(key, updatedPub);
         } else {
             // New publication from API
             mergedPubs.set(key, pub);
