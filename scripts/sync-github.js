@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 
 const GITHUB_USERNAME = 'JValdivia23';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_PAT;
@@ -62,6 +63,20 @@ async function fetchGitHubData() {
             }
           }
         }
+        repositories(first: 6, privacy: PUBLIC, orderBy: {field: STARGAZERS, direction: DESC}) {
+          nodes {
+            name
+            description
+            url
+            stargazerCount
+            languages(first: 1, orderBy: {field: SIZE, direction: DESC}) {
+              nodes {
+                name
+                color
+              }
+            }
+          }
+        }
       }
     }
   `;
@@ -82,7 +97,13 @@ async function fetchGitHubData() {
             throw new Error(JSON.stringify(data.errors));
         }
 
-        const pinnedRepos = data.data.user.pinnedItems.nodes.map(repo => ({
+        // Try pinned items first, fallback to top repositories
+        let nodes = data.data.user.pinnedItems.nodes;
+        if (nodes.length === 0) {
+            nodes = data.data.user.repositories.nodes;
+        }
+
+        const pinnedRepos = nodes.map(repo => ({
             name: repo.name,
             description: repo.description,
             url: repo.url,

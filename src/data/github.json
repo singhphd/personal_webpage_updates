@@ -8,24 +8,40 @@
     "languageColor": "#e16737"
   },
   {
-    "name": "MIRA-35c-Peru",
-    "description": "Matlab scripts for MIRA-35c cloud radar data processing and visualization.",
-    "url": "https://github.com/JValdivia23/MIRA-35c-Peru",
-    "stars": 1,
-    "language": "MATLAB",
-    "languageColor": "#e16737"
-  },
-  {
     "name": "SOFTX-D-16-00059",
-    "description": "TopoZeko: A MATLAB function for 3-D and 4-D topographical visualization in geosciences.",
+    "description": "TopoZeko: A MATLAB function for 3-D and 4-D topographical visualization in geosciences. To cite this software publication: https://www.sciencedirect.com/science/article/pii/S2352711017300535",
     "url": "https://github.com/JValdivia23/SOFTX-D-16-00059",
     "stars": 1,
     "language": "MATLAB",
     "languageColor": "#e16737"
   },
   {
+    "name": "MIRA-35c-Peru",
+    "description": "Matlab scripts for MIRA35c cloud radar",
+    "url": "https://github.com/JValdivia23/MIRA-35c-Peru",
+    "stars": 1,
+    "language": "MATLAB",
+    "languageColor": "#e16737"
+  },
+  {
+    "name": "opencode-sshfs",
+    "description": "Remote development workflow for OpenCode using SSHFS",
+    "url": "https://github.com/JValdivia23/opencode-sshfs",
+    "stars": 0,
+    "language": "Shell",
+    "languageColor": "#89e051"
+  },
+  {
+    "name": "personal_webpage",
+    "description": "My personal web page. Contains automated Google Scholar stats and description of my personal projects.",
+    "url": "https://github.com/JValdivia23/personal_webpage",
+    "stars": 0,
+    "language": "TypeScript",
+    "languageColor": "#3178c6"
+  },
+  {
     "name": "radar-dct-smoothing",
-    "description": "DCT-based smoothing algorithms for radar data processing.",
+    "description": "Radar smoothing algorithm using Discrete Cosine Transform",
     "url": "https://github.com/JValdivia23/radar-dct-smoothing",
     "stars": 0,
     "language": "Jupyter Notebook",
