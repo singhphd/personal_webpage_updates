@@ -31,7 +31,7 @@ export const Hero = () => {
                         I am a Ph.D. candidate in the Department of Atmospheric and Oceanic Sciences at the University of Colorado Boulder.
                     </p>
                     <p>
-                        My research is focused in Cloud Microphysics, Radar Meteorology, and Numerical Modeling to better understand precipitation processes in complex terrain. I am also interested in Machine Learning applications in Atmospheric Science, or just for fun!
+                        My research is focused on Cloud Microphysics, Radar Meteorology, and Numerical Modeling to better understand precipitation processes in complex terrain. I am also interested in Machine Learning applications in Atmospheric Science, or just for fun!
                     </p>
                 </div>
 
