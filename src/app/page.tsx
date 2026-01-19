@@ -14,7 +14,7 @@ export default function Home() {
           title={null}
           description={null}
           header={<Hero />}
-          className="md:col-span-3 bg-neutral-50 dark:bg-neutral-900 border-none justify-center min-h-[14rem]"
+          className="md:col-span-3 bg-gradient-to-br from-blue-50 via-purple-50/30 to-transparent dark:from-blue-950/20 dark:via-purple-950/10 dark:to-transparent border-none justify-center min-h-fit"
         />
 
         {/* Row 2: Featured Visual (CTGC) */}

@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI/Agent documentation (local only)
+AGENTS.md
+GEMINI.md
+Plan.md
+PROGRESS.md
+PROGRESS_PHASE_2.md
+MANUAL_UPDATES.md

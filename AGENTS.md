@@ -45,6 +45,185 @@
 *   **sync-publications-semantic.js**: Backup - Fetches from Semantic Scholar API
 *   **sync-github.js**: Fetches pinned repos from GitHub GraphQL API
 
+## Developer & Agent Guide
+
+### Technical Gotchas (Critical!)
+
+#### Base Path Configuration
+This project uses `basePath: "/personal_webpage"` for GitHub Pages deployment.
+
+**Image & Asset Paths:**
+- All `<Image>` and `<img>` src paths in components MUST include the base path prefix
+- ✅ Correct: `<Image src="/personal_webpage/photo.jpeg" />`
+- ❌ Wrong: `<Image src="/photo.jpeg" />` (will 404)
+- ❌ Wrong: `<Image src="../../public/photo.jpeg" />` (relative paths don't work)
+
+**Link Paths:**
+- Internal Next.js `<Link>` components handle basePath automatically
+- External `<a>` tags for downloads need the full path: `href="/personal_webpage/cv.pdf"`
+
+**Verification:**
+```bash
+# Test if an asset is accessible in dev mode:
+curl -I http://localhost:3000/personal_webpage/photo.jpeg
+# Should return: HTTP/1.1 200 OK
+```
+
+#### Next.js Config Reference
+Location: `next.config.ts`
+```typescript
+const nextConfig: NextConfig = {
+  output: "export",           // Static export for GitHub Pages
+  basePath: "/personal_webpage",
+  assetPrefix: "/personal_webpage",
+  images: { unoptimized: true },  // Required for static export
+};
+```
+
+---
+
+### Local Development
+
+**Start Development Server:**
+```bash
+npm run dev
+# Runs at: http://localhost:3000/personal_webpage
+```
+
+**Build for Production:**
+```bash
+npm run build
+# Creates static export in /out directory
+```
+
+**Test Production Build Locally:**
+```bash
+npx serve out
+```
+
+**Sync Data from External Sources:**
+```bash
+# Publications from Google Scholar
+python scripts/sync-scholar.py
+
+# GitHub pinned repos
+node scripts/sync-github.js
+```
+
+**Requirements:**
+- Node.js 18+ (currently using v25.2.1)
+- Python 3.x with `scholarly` library (for sync-scholar.py)
+
+---
+
+### Component Architecture
+
+**Layout Structure:**
+```
+src/
+├── app/
+│   ├── layout.tsx      # Root layout with metadata
+│   ├── page.tsx        # Home page (uses BentoGrid)
+│   ├── research/       # Research page
+│   ├── publications/   # Publications page
+│   ├── cv/             # CV page
+│   └── globals.css     # Global styles + Tailwind
+├── components/
+│   ├── Hero.tsx        # Main landing section (photo + bio)
+│   ├── FeaturedVisual.tsx
+│   ├── ReadingList.tsx
+│   └── ui/
+│       └── BentoGrid.tsx  # Grid layout component
+└── data/
+    ├── publications.json
+    ├── stats.json
+    ├── github.json
+    └── highlights.json
+```
+
+**Key Components:**
+| Component | Purpose | Location |
+|-----------|---------|----------|
+| `Hero` | Homepage intro with photo, bio, social links | `src/components/Hero.tsx` |
+| `BentoGrid` | Responsive grid layout system | `src/components/ui/BentoGrid.tsx` |
+| `FeaturedVisual` | 3D CTGC project showcase | `src/components/FeaturedVisual.tsx` |
+| `ReadingList` | Markdown-powered reading/news section | `src/components/ReadingList.tsx` |
+
+**Styling Patterns:**
+- Tailwind CSS for all styling
+- Dark mode: Uses `dark:` prefix classes
+- Responsive: Mobile-first with `md:` breakpoints
+- Colors: Neutral palette with blue/purple accents
+
+---
+
+### Common Tasks Quick Reference
+
+| Task | File(s) to Edit |
+|------|-----------------|
+| Change profile photo | Replace `public/photo.jpeg`, update `src/components/Hero.tsx` |
+| Update bio text | `src/components/Hero.tsx` |
+| Change CV | Replace `public/cv.pdf` |
+| Add/edit reading posts | Add `.md` files to `public/reading/` |
+| Change recommended paper | `src/data/highlights.json` |
+| Update social links | `src/components/Hero.tsx` |
+| Modify home page layout | `src/app/page.tsx` |
+| Update research page | `src/app/research/page.tsx` |
+
+---
+
+### Static Assets in `public/`
+
+| File | Purpose |
+|------|---------|
+| `photo.jpeg` | Profile photo (1600x1600px) |
+| `cv.pdf` | Downloadable CV |
+| `avatar.png` | Fallback/OG image |
+| `projects/3D_CTGC_web/` | Standalone 3D visualization project |
+| `reading/` | Markdown posts for reading list |
+
+---
+
+### Troubleshooting
+
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| Image not displaying | Missing basePath prefix | Use `/personal_webpage/filename.ext` |
+| 404 on local dev | Wrong URL | Dev server runs at `localhost:3000/personal_webpage` |
+| Build fails with image error | Using relative path | Never use `../../public/` - use absolute paths with basePath |
+| CSS not updating | Browser cache | Hard refresh: `Cmd+Shift+R` (Mac) or `Ctrl+F5` (Windows) |
+| Publications not updating | Stale data | Run `python scripts/sync-scholar.py` |
+| GitHub Actions failing | API rate limit | Check workflow logs, may need to wait or use fallback |
+
+**Quick Diagnostic Commands:**
+```bash
+# Check if asset is accessible
+curl -I http://localhost:3000/personal_webpage/photo.jpeg
+
+# Verify build works
+npm run build
+
+# Check for TypeScript errors
+npx tsc --noEmit
+```
+
+---
+
+### Files Not Tracked in Git
+
+The following files are for local development/AI assistance only and are excluded from the repository via `.gitignore`:
+
+| File | Purpose |
+|------|---------|
+| `AGENTS.md` | AI/Agent context and instructions (this file) |
+| `GEMINI.md` | Original AI planning document |
+| `Plan.md` | Architectural planning notes |
+| `PROGRESS.md` | Development progress tracking |
+| `PROGRESS_PHASE_2.md` | Phase 2 progress tracking |
+| `MANUAL_UPDATES.md` | User guide for manual content edits |
+
+**Note:** These files exist locally to help AI assistants understand the project context and help you with manual updates, but should not be committed to the public repository.
+
 ## Current Status
 ✅ **Project Complete** - Live at https://jvaldivia23.github.io/personal_webpage/
 
