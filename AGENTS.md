@@ -179,8 +179,19 @@ src/
 | `photo.jpeg` | Profile photo (1600x1600px) |
 | `cv.pdf` | Downloadable CV |
 | `avatar.png` | Fallback/OG image |
+| `icon.svg` | Browser Tab Icon (Favicon) - Official Lucide Radar Icon |
 | `projects/3D_CTGC_web/` | Standalone 3D visualization project |
 | `reading/` | Markdown posts for reading list |
+
+### Data Integrity & Sync Logic (Critical!)
+**Strategy:** Hybrid Merge (Semantic Scholar + Google Scholar)
+1. **Semantic Scholar (Priority):** Fetches high-quality metadata (DOIs, full titles).
+2. **Google Scholar (Fallback):** Used if Semantic Scholar misses papers.
+3. **Merge Logic:**
+   - Entries are deduplicated by **normalized title** (lowercase, alphanumeric only).
+   - If a paper exists in both, Semantic Scholar's URL (DOI) overwrites Google Scholar's empty URL.
+   - **Fallback Links:** If no direct URL is found, a Google Scholar citation link is automatically generated (`scripts/sync-scholar.py`).
+4. **Manual Fixes:** If duplicates persist (e.g., heavily truncated titles), manual deletion in `publications.json` is safe.
 
 ---
 
@@ -226,6 +237,14 @@ The following files are for local development/AI assistance only and are exclude
 
 ## Current Status
 ✅ **Project Complete** - Live at https://jvaldivia23.github.io/personal_webpage/
+
+### Recent Updates (January 19, 2025)
+- **Data Restoration:** Restored full publication history (27 papers) after a bad sync.
+- **Sync Logic Upgrade:** Implemented robust deduplication strategy (Semantic Scholar priority + Google Scholar fallback) to prevent future data loss.
+- **Auto-Repair:** Scripts now automatically generate Google Scholar citation links if direct URLs are missing.
+- **GitHub Sync Fix:** Updated `sync-github.js` to fall back to "Top Starred" repos if no Pinned Repos are found.
+- **Favicon:** Replaced default icon with a custom **Radar Icon** (`public/icon.svg`).
+- **Transparency:** Added data source disclaimer and "Last Updated" date to Publications page.
 
 ### Recent Updates (January 14, 2025 - Part 4)
 - **Repository Cleanup**: Removed temporary build artifacts and redundant source folders to maintain a clean codebase.
