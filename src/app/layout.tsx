@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   description: "Ph.D. Student at University of Colorado Boulder (ATOC). Radar Scientist specializing in cloud microphysics and precipitation studies.",
   keywords: ["Radar Meteorology", "Cloud Microphysics", "Atmospheric Science", "CU Boulder", "Jairo Valdivia"],
   authors: [{ name: "Jairo M. Valdivia" }],
+  icons: {
+    icon: "/personal_webpage/icon.svg",
+  },
   openGraph: {
     title: "Jairo M. Valdivia | Personal Webpage",
     description: "Radar Scientist and Ph.D. Student at CU Boulder.",
