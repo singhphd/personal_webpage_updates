@@ -1,6 +1,15 @@
 {
   "recommended": {
     "title": "Future changes of precipitation types in the Peruvian Andes",
-    "reason": "My pick - Climate change impacts on Andean precipitation"
+    "paperId": "nature-s41598-024-71840-2",
+    "reason": "My pick - Climate change impacts on Andean precipitation",
+    "fallback": {
+      "paperId": "nature-s41598-024-71840-2",
+      "url": "https://www.nature.com/articles/s41598-024-71840-2",
+      "title": "Future changes of precipitation types in the Peruvian Andes",
+      "venue": "Scientific Reports",
+      "year": 2024,
+      "citationCount": 5
+    }
   }
 }

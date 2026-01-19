@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "name": "parsivel2",
+    "description": "A MATLAB toolbox for reading, plotting and manipulating OTT Parsivel2 disdrometer 'raw' data.",
+    "url": "https://github.com/JValdivia23/parsivel2",
+    "stars": 2,
+    "language": "MATLAB",
+    "languageColor": "#e16737"
+  },
+  {
+    "name": "MIRA-35c-Peru",
+    "description": "Matlab scripts for MIRA-35c cloud radar data processing and visualization.",
+    "url": "https://github.com/JValdivia23/MIRA-35c-Peru",
+    "stars": 1,
+    "language": "MATLAB",
+    "languageColor": "#e16737"
+  },
+  {
+    "name": "SOFTX-D-16-00059",
+    "description": "TopoZeko: A MATLAB function for 3-D and 4-D topographical visualization in geosciences.",
+    "url": "https://github.com/JValdivia23/SOFTX-D-16-00059",
+    "stars": 1,
+    "language": "MATLAB",
+    "languageColor": "#e16737"
+  },
+  {
+    "name": "radar-dct-smoothing",
+    "description": "DCT-based smoothing algorithms for radar data processing.",
+    "url": "https://github.com/JValdivia23/radar-dct-smoothing",
+    "stars": 0,
+    "language": "Jupyter Notebook",
+    "languageColor": "#DA5B0B"
+  }
+]

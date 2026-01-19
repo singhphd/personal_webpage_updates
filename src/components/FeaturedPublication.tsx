@@ -3,21 +3,111 @@ import highlights from "@/data/highlights.json";
 import Link from "next/link";
 import { ArrowUpRight, Award, Star } from "lucide-react";
 
+// Type for publication data
+interface Publication {
+    paperId: string;
+    url: string;
+    title: string;
+    venue: string;
+    year: number | null;
+    citationCount: number;
+    highlighted?: boolean;
+}
+
+// Type for highlights config with optional fallback
+interface HighlightsConfig {
+    recommended?: {
+        title?: string;
+        paperId?: string;
+        reason?: string;
+        fallback?: Omit<Publication, 'highlighted'>;
+    };
+}
+
 interface FeaturedPublicationProps {
     type: "most-cited" | "recommended";
 }
 
-export const FeaturedPublication = ({ type }: FeaturedPublicationProps) => {
-    // Find the most-cited publication
-    const mostCited = publications.reduce((max, pub) => 
-        (pub.citationCount > max.citationCount) ? pub : max
-    , publications[0]);
+// Helper: Normalize title for comparison
+const normalizeTitle = (title: string): string => 
+    title.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-    // Find the recommended publication from highlights config
-    const recommendedTitle = highlights.recommended?.title?.toLowerCase().trim() || "";
-    const recommended = publications.find(
-        pub => pub.title.toLowerCase().trim() === recommendedTitle
-    );
+// Helper: Check if title contains key words from another title
+const fuzzyTitleMatch = (pubTitle: string, searchTitle: string): boolean => {
+    const pubNorm = normalizeTitle(pubTitle);
+    const searchNorm = normalizeTitle(searchTitle);
+    
+    // Exact match
+    if (pubNorm === searchNorm) return true;
+    
+    // Check if one contains the other
+    if (pubNorm.includes(searchNorm) || searchNorm.includes(pubNorm)) return true;
+    
+    // Extract key words (4+ chars) and check overlap
+    const getKeyWords = (s: string) => s.split(/\s+/).filter(w => w.length >= 4);
+    const pubWords = new Set(getKeyWords(normalizeTitle(pubTitle)));
+    const searchWords = getKeyWords(normalizeTitle(searchTitle));
+    
+    // If 60%+ of search words are in publication title, consider it a match
+    const matchCount = searchWords.filter(w => pubWords.has(w)).length;
+    return searchWords.length > 0 && matchCount / searchWords.length >= 0.6;
+};
+
+// Helper: Find publication with multiple matching strategies
+const findPublication = (
+    pubs: Publication[], 
+    config: HighlightsConfig['recommended']
+): Publication | null => {
+    if (!config) return null;
+    
+    // Strategy 1: Match by paperId (most reliable)
+    if (config.paperId) {
+        const byId = pubs.find(p => p.paperId === config.paperId);
+        if (byId) return byId;
+    }
+    
+    // Strategy 2: Match by exact title
+    if (config.title) {
+        const exactMatch = pubs.find(
+            p => normalizeTitle(p.title) === normalizeTitle(config.title!)
+        );
+        if (exactMatch) return exactMatch;
+        
+        // Strategy 3: Fuzzy title match
+        const fuzzyMatch = pubs.find(p => fuzzyTitleMatch(p.title, config.title!));
+        if (fuzzyMatch) return fuzzyMatch;
+    }
+    
+    // Strategy 4: Use fallback data if provided
+    if (config.fallback) {
+        return {
+            ...config.fallback,
+            title: config.title || config.fallback.title,
+        } as Publication;
+    }
+    
+    // Log warning in development
+    if (process.env.NODE_ENV === 'development') {
+        console.warn(
+            `[FeaturedPublication] Could not find recommended publication: "${config.title}". ` +
+            `Consider adding a 'fallback' object to highlights.json.`
+        );
+    }
+    
+    return null;
+};
+
+export const FeaturedPublication = ({ type }: FeaturedPublicationProps) => {
+    const typedPublications = publications as Publication[];
+    const typedHighlights = highlights as HighlightsConfig;
+    
+    // Find the most-cited publication
+    const mostCited = typedPublications.reduce((max, pub) => 
+        (pub.citationCount > max.citationCount) ? pub : max
+    , typedPublications[0]);
+
+    // Find the recommended publication using flexible matching
+    const recommended = findPublication(typedPublications, typedHighlights.recommended);
 
     // Select the publication based on type
     const featured = type === "recommended" && recommended ? recommended : mostCited;

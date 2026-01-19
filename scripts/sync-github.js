@@ -2,18 +2,44 @@ const fs = require('fs');
 const path = require('path');
 
 const GITHUB_USERNAME = 'JValdivia23';
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_PAT;
+const GITHUB_FILE = path.join(__dirname, '../src/data/github.json');
+
+// Load existing GitHub data to preserve on failure
+function loadExistingData() {
+    try {
+        if (fs.existsSync(GITHUB_FILE)) {
+            const content = fs.readFileSync(GITHUB_FILE, 'utf-8');
+            const data = JSON.parse(content);
+            if (Array.isArray(data) && data.length > 0) {
+                return data;
+            }
+        }
+    } catch (error) {
+        console.warn('Warning: Could not load existing GitHub data:', error.message);
+    }
+    return null;
+}
 
 async function fetchGitHubData() {
     console.log('Fetching pinned repositories from GitHub...');
+    
+    // Load existing data first (for fallback)
+    const existingData = loadExistingData();
+    if (existingData) {
+        console.log(`Loaded ${existingData.length} existing repositories as fallback.`);
+    }
 
     if (!GITHUB_TOKEN) {
-        console.warn('GITHUB_TOKEN not found. Using public API (rate limits may apply).');
-        // Note: Fetching pinned repos publicly via API is tricky without scraping or V4 API. 
-        // We will use the GraphQL API which requires a token.
-        // If no token, we might exit or use a fallback.
-        // For now, let's error if no token is present, as it's required for GraphQL.
-        console.error('Error: GITHUB_TOKEN is required for GraphQL API.');
+        console.warn('GITHUB_TOKEN not found. GraphQL API requires authentication.');
+        console.warn('Set GITHUB_TOKEN or GH_PAT environment variable.');
+        
+        if (existingData) {
+            console.log('Keeping existing GitHub data to prevent data loss.');
+            return; // Exit without overwriting
+        }
+        
+        console.error('Error: No existing data and no token available.');
         process.exit(1);
     }
 
@@ -65,12 +91,24 @@ async function fetchGitHubData() {
             languageColor: repo.languages.nodes[0] ? repo.languages.nodes[0].color : '#ccc'
         }));
 
-        const outputPath = path.join(__dirname, '../src/data/github.json');
-        fs.writeFileSync(outputPath, JSON.stringify(pinnedRepos, null, 2));
-        console.log(`Successfully saved ${pinnedRepos.length} pinned repositories to ${outputPath}`);
+        // SAFETY CHECK: Don't overwrite with empty data
+        if (pinnedRepos.length === 0 && existingData) {
+            console.warn('WARNING: API returned 0 repos but we have existing data.');
+            console.warn('Keeping existing GitHub data to prevent data loss.');
+            return;
+        }
+
+        fs.writeFileSync(GITHUB_FILE, JSON.stringify(pinnedRepos, null, 2));
+        console.log(`Successfully saved ${pinnedRepos.length} pinned repositories.`);
 
     } catch (error) {
-        console.error('Error fetching GitHub data:', error);
+        console.error('Error fetching GitHub data:', error.message);
+        
+        if (existingData) {
+            console.log('Keeping existing GitHub data due to fetch error.');
+            return; // Don't exit with error code, just preserve existing
+        }
+        
         process.exit(1);
     }
 }

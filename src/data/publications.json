@@ -1,5 +1,14 @@
 [
   {
+    "paperId": "nature-s41598-024-71840-2",
+    "url": "https://www.nature.com/articles/s41598-024-71840-2",
+    "title": "Future changes of precipitation types in the Peruvian Andes",
+    "venue": "Scientific Reports",
+    "year": 2024,
+    "citationCount": 5,
+    "highlighted": true
+  },
+  {
     "paperId": "1ba827e530b9933585997f2bafff013e9ccd591b",
     "url": "https://doi.org/10.1016/j.agrformet.2025.110570",
     "title": "Surface energy exchanges and stability conditions associated with convective intense rainfall events on the central Andes of Peru",
@@ -16,20 +25,28 @@
     "citationCount": 0
   },
   {
-    "paperId": "5cff041aa7e164fc1e62cfd413399696a7a49a58",
-    "url": "https://doi.org/10.3390/ATMOS12030408",
-    "title": "Analysis of Extreme Meteorological Events in the Central Andes of Peru Using a Set of Specialized Instruments",
-    "venue": "Atmosphere",
-    "year": 2021,
-    "citationCount": 12
+    "paperId": "amt-17-2295-2024",
+    "url": "https://doi.org/10.5194/amt-17-2295-2024",
+    "title": "Hailstorm events in the Central Andes of Peru: insights from historical data and radar microphysics",
+    "venue": "Atmospheric Measurement Techniques",
+    "year": 2024,
+    "citationCount": 0
   },
   {
-    "paperId": "7b29444d8d8df8e3305b64867c5bc0491ffc8c01",
-    "url": "https://doi.org/10.1016/j.atmosres.2020.105188",
-    "title": "On the dynamic mechanisms of intense rainfall events in the central Andes of Peru, Mantaro valley",
-    "venue": "",
-    "year": 2021,
-    "citationCount": 20
+    "paperId": "sensors-22-3219",
+    "url": "https://doi.org/10.3390/s22093219",
+    "title": "Field Campaign Evaluation of Sensors Lufft GMX500 and MaxiMet WS100 in Peruvian Central Andes",
+    "venue": "Sensors",
+    "year": 2022,
+    "citationCount": 0
+  },
+  {
+    "paperId": "jamc-d-20-0211",
+    "url": "https://doi.org/10.1175/JAMC-D-20-0211.1",
+    "title": "The GPM-DPR Blind Zone Effect on Satellite-Based Radar Estimation of Precipitation over the Andes from a Ground-Based Ka-band Profiler Perspective",
+    "venue": "Journal of Applied Meteorology and Climatology",
+    "year": 2022,
+    "citationCount": 0
   },
   {
     "paperId": "abb0fe479ffc6ec7fe0b62286db3118cc5205c8d",
@@ -40,35 +57,51 @@
     "citationCount": 14
   },
   {
+    "paperId": "5cff041aa7e164fc1e62cfd413399696a7a49a58",
+    "url": "https://doi.org/10.3390/atmos12030408",
+    "title": "Analysis of Extreme Meteorological Events in the Central Andes of Peru Using a Set of Specialized Instruments",
+    "venue": "Atmosphere",
+    "year": 2021,
+    "citationCount": 12
+  },
+  {
+    "paperId": "7b29444d8d8df8e3305b64867c5bc0491ffc8c01",
+    "url": "https://doi.org/10.1016/j.atmosres.2020.105188",
+    "title": "On the dynamic mechanisms of intense rainfall events in the central Andes of Peru, Mantaro valley",
+    "venue": "Atmospheric Research",
+    "year": 2021,
+    "citationCount": 20
+  },
+  {
+    "paperId": "jtech-d-19-0105",
+    "url": "https://doi.org/10.1175/JTECH-D-19-0105.1",
+    "title": "Multi-instrument rainfall-rate estimation in the Peruvian central Andes",
+    "venue": "Journal of Atmospheric and Oceanic Technology",
+    "year": 2020,
+    "citationCount": 0
+  },
+  {
+    "paperId": "atmos-11-248",
+    "url": "https://doi.org/10.3390/atmos11030248",
+    "title": "Rainfall Characteristics in the Mantaro Basin over Tropical Andes from a Vertically Pointed Profile Rain Radar and In-Situ Field Campaign",
+    "venue": "Atmosphere",
+    "year": 2020,
+    "citationCount": 0
+  },
+  {
+    "paperId": "dib-105215",
+    "url": "https://doi.org/10.1016/j.dib.2020.105215",
+    "title": "Dataset on raindrop size distribution, raindrop fall velocity and precipitation data measured by disdrometers and rain gauges over Peruvian central Andes (12.0°S)",
+    "venue": "Data in Brief",
+    "year": 2020,
+    "citationCount": 0
+  },
+  {
     "paperId": "92a70b2a90c8776bda0bfb345529834aaeeeb568",
-    "url": "https://doi.org/10.3390/ATMOS10080442",
+    "url": "https://doi.org/10.3390/atmos10080442",
     "title": "The Impact of Microphysics Parameterization in the Simulation of Two Convective Rainfall Events over the Central Andes of Peru Using WRF-ARW",
     "venue": "Atmosphere",
     "year": 2019,
     "citationCount": 41
-  },
-  {
-    "paperId": "09cd0c471c77a81dcd1bf51820273dd098992e2b",
-    "url": "https://www.semanticscholar.org/paper/09cd0c471c77a81dcd1bf51820273dd098992e2b",
-    "title": "1 Rainfall characteristics in the central Andes of Peru 2 from a vertically pointed profile rain radar and in3 situ field campaign 4",
-    "venue": "",
-    "year": 2019,
-    "citationCount": 0
-  },
-  {
-    "paperId": "36032953e0010490e10753fdc9601afea97fb0fd",
-    "url": "https://www.semanticscholar.org/paper/36032953e0010490e10753fdc9601afea97fb0fd",
-    "title": "Rainfall Characteristics in the Central Andes of Peru from a Vertically Pointed Profile Rain Radar and In-situ Field Campaign",
-    "venue": "",
-    "year": 2019,
-    "citationCount": 4
-  },
-  {
-    "paperId": "05184d37a147cd032a515a091a30d41e8f0b7a24",
-    "url": "https://www.semanticscholar.org/paper/05184d37a147cd032a515a091a30d41e8f0b7a24",
-    "title": "Direct in Situ Measurements of Current Density Variations in the Ionosphere by Using the Current Density Probe Rogowski Coil Onboard Sych 1M Satellite",
-    "venue": "",
-    "year": 2006,
-    "citationCount": 0
   }
 ]
