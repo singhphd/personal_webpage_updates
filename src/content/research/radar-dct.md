@@ -1,6 +1,6 @@
 ---
 title: "Radar Data Processing with DCT"
-summary: "Advanced noise removal in radar Doppler spectra using Discrete Cosine Transform (DCT) smoothing."
+summary: "Advanced noise removal in radar data using Discrete Cosine Transform (DCT) smoothing."
 priority: 1
 tags: ["Signal Processing", "Radar", "Algorithms", "Python"]
 links:

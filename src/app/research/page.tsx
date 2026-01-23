@@ -107,40 +107,58 @@ export default function ResearchPage() {
                 className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-zinc-900/50"
             >
                 <div className="p-6 sm:p-8">
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                    <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                        {post.title}
-                    </h3>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                        {post.tags.map(tag => (
-                        <span key={tag} className="inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
-                            {tag}
-                        </span>
-                        ))}
-                    </div>
-                    </div>
-                    
-                    {/* Links */}
-                    {post.links && (
-                    <div className="flex gap-2 shrink-0">
-                        {post.links.repo && (
-                        <Link href={post.links.repo} target="_blank" className="p-2 rounded-lg bg-gray-50 text-gray-600 hover:bg-gray-100 dark:bg-zinc-800 dark:text-gray-400 dark:hover:bg-zinc-700 transition-colors" title="View Code">
-                            <Github size={20} />
-                        </Link>
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                        <div className="flex-1">
+                            <Link href={`/research/${post.slug}`} className="group/title inline-block">
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover/title:text-blue-600 dark:group-hover/title:text-blue-400 transition-colors">
+                                    {post.title}
+                                </h3>
+                            </Link>
+                            <div className="mt-3 flex flex-wrap gap-2">
+                                {post.tags.map(tag => (
+                                <span key={tag} className="inline-flex items-center rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+                                    {tag}
+                                </span>
+                                ))}
+                            </div>
+                            
+                            <p className="mt-4 text-gray-600 dark:text-gray-300 line-clamp-3 leading-relaxed">
+                                {post.summary}
+                            </p>
+                            
+                            <div className="mt-6 flex items-center gap-6">
+                                <Link 
+                                    href={`/research/${post.slug}`}
+                                    className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                                >
+                                    Read Full Case Study <ArrowRight size={16} />
+                                </Link>
+                                
+                                <div className="flex gap-3">
+                                    {post.links?.repo && (
+                                    <Link href={post.links.repo} target="_blank" className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors" title="View Code">
+                                        <Github size={18} />
+                                    </Link>
+                                    )}
+                                    {post.links?.paper && (
+                                    <Link href={post.links.paper} target="_blank" className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors" title="Read Paper">
+                                        <FileText size={18} />
+                                    </Link>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {post.image && (
+                            <div className="hidden sm:block w-32 h-32 shrink-0 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800">
+                                <img 
+                                    src={post.image.startsWith('/') && !post.image.startsWith('/personal_webpage') ? `/personal_webpage${post.image}` : post.image} 
+                                    alt={post.title}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
                         )}
-                        {post.links.paper && (
-                        <Link href={post.links.paper} target="_blank" className="p-2 rounded-lg bg-gray-50 text-gray-600 hover:bg-gray-100 dark:bg-zinc-800 dark:text-gray-400 dark:hover:bg-zinc-700 transition-colors" title="Read Paper">
-                            <FileText size={20} />
-                        </Link>
-                        )}
                     </div>
-                    )}
-                </div>
-
-                <div className="mt-6 prose prose-neutral dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">
-                    <ReactMarkdown>{post.content}</ReactMarkdown>
-                </div>
                 </div>
             </article>
             ))}
