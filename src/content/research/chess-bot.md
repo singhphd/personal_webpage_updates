@@ -1,6 +1,6 @@
 ---
 title: "AI Chess Bot"
-summary: "A reinforcement learning chess engine built with PyTorch."
+summary: "A chess engine built with PyTorch and trained with distillation from Stockfish."
 priority: 4
 tags: ["Machine Learning", "PyTorch", "AI", "Side Project"]
 links:
