@@ -1,8 +1,8 @@
 ---
-title: "Cloud Top Generating Cells (CTGCs)"
-summary: "Building a global database of CTGCs using ground-based radar and developing 3D shape tracking algorithms."
+title: "Life cycle of Cloud Top Generating Cells During WINTRE-MIX"
+summary: "Analyzing the life cycle and microphysical evolution of Cloud Top Generating Cells (CTGCs) using Doppler on Wheels (DOW) radars."
 priority: 1
-tags: ["Cloud Microphysics", "Radar", "Python", "Big Data"]
+tags: ["Cloud Microphysics", "Radar", "DOW", "WintreMix"]
 image: "/ctgc-placeholder.png"
 links:
   repo: "https://github.com/JValdivia23"
@@ -10,20 +10,17 @@ links:
 
 ## Overview
 
-Cloud Top Generating Cells (CTGCs) are small-scale convective elements at the tops of cloud systems that play a crucial role in ice crystal formation and precipitation development. Despite their importance, their global characteristics and lifecycle are not fully understood.
+Cloud Top Generating Cells (CTGCs) are small-scale convective elements at the tops of cloud systems that play a crucial role in ice crystal formation and precipitation development. As part of the **WintreMix field campaign**, I am analyzing the temporal evolution and microphysical impacts of these cells.
 
 ## Key Contributions
 
-- **Global Database:** I am processing years of ground-based radar data from multiple ARM (Atmospheric Radiation Measurement) sites to construct a comprehensive climatology of CTGCs.
-- **3D Tracking:** Developing novel algorithms to track these cells in 3D space, allowing for detailed analysis of their lifecycle and evolution.
-- **Microphysics:** Investigating the link between CTGC dynamics and ice nucleation processes.
+- **Field Campaign Analysis:** Utilizing data from the **Doppler on Wheels (DOW)** radars collected during WintreMix.
+- **Dual-Doppler Analysis:** Performing 3D wind field retrievals to understand the kinematic structure of CTGCs.
+- **Lifecycle Tracking:** Characterizing the evolution of localized updrafts and their interaction with the generating waves.
 
 ## Technical Approach
 
-Using Python and the Py-ART library, I process raw radar moments to identify and classify generating cells. The workflow involves:
-
-1.  **Data Ingestion:** Handling large volumes of Ka-band and W-band radar data.
-2.  **Feature Detection:** Implementing image processing techniques to isolate cells.
-3.  **Statistical Analysis:** Deriving properties like fall speed, spectral width, and lifetime.
-
-*(More details coming soon)*
+My work involves processing high-resolution radar data to:
+1.  **Retrieve Wind Fields:** Using Dual-Doppler techniques to map 3D airflow.
+2.  **Track Cells:** Identifying and following CTGC features over time.
+3.  **Quantify Microphysics:** Linking observed dynamics to ice growth and precipitation enhancement.
