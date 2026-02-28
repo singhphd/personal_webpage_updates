@@ -1,15 +1,15 @@
 {
   "recommended": {
-    "title": "Future changes of precipitation types in the Peruvian Andes",
-    "paperId": "nature-s41598-024-71840-2",
-    "reason": "My pick - Climate change impacts on Andean precipitation",
+    "title": "Radar Data Smoothing using the Discrete Cosine Transform: A Fast Spectral Domain Algorithm",
+    "paperId": "egusphere-2026-415",
+    "reason": "My pick - Latest preprint on DCT-based radar smoothing",
     "fallback": {
-      "paperId": "nature-s41598-024-71840-2",
-      "url": "https://www.nature.com/articles/s41598-024-71840-2",
-      "title": "Future changes of precipitation types in the Peruvian Andes",
-      "venue": "Scientific Reports",
-      "year": 2024,
-      "citationCount": 5
+      "paperId": "egusphere-2026-415",
+      "url": "https://doi.org/10.5194/egusphere-2026-415",
+      "title": "Radar Data Smoothing using the Discrete Cosine Transform: A Fast Spectral Domain Algorithm",
+      "venue": "EGUsphere",
+      "year": 2026,
+      "citationCount": 0
     }
   }
 }
