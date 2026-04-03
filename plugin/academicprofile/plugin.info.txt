@@ -1,0 +1,7 @@
+base    academicprofile
+author  Jairo M. Valdivia
+email   jvaldivia@colorado.edu
+name    Academic Profile
+desc    Displays publications, research projects, GitHub repos and reading list sourced from a GitHub-hosted academic portfolio. Shortcodes: ~~PUBLICATIONS~~ ~~SCHOLAR_STATS~~ ~~GITHUB_REPOS~~ ~~RESEARCH_LIST~~ ~~READING_LIST~~
+url     https://github.com/JValdivia23/personal_webpage
+version 2026-04-03

@@ -1,0 +1,360 @@
+/* =============================================================================
+   DokuWiki Plugin: academicprofile
+   Styles for all shortcode components
+   ============================================================================= */
+
+/* ── Shared utilities ────────────────────────────────────────────────────── */
+
+.ap-error {
+    padding: 0.75em 1em;
+    border-left: 4px solid #e74c3c;
+    background: #fdf3f2;
+    color: #c0392b;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin: 1em 0;
+}
+
+.ap-meta {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.5em;
+}
+
+.ap-meta a {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* ── Tag badges ──────────────────────────────────────────────────────────── */
+
+.ap-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+    margin-top: 0.6em;
+}
+
+.ap-tag {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border-radius: 12px;
+    background: #e8f0fe;
+    color: #2c5282;
+    font-size: 0.75em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* ── ~~SCHOLAR_STATS~~ ───────────────────────────────────────────────────── */
+
+.ap-scholar-stats {
+    margin: 1.5em 0;
+}
+
+.ap-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.75em;
+}
+
+.ap-stat-box {
+    padding: 1em 0.75em;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.ap-stat-box.ap-stat-highlight {
+    background: #ebf4ff;
+    border-color: #90cdf4;
+}
+
+.ap-stat-value {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.1;
+}
+
+.ap-stat-box.ap-stat-highlight .ap-stat-value {
+    color: #2b6cb0;
+}
+
+.ap-stat-label {
+    font-size: 0.75em;
+    color: #718096;
+    margin-top: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ── ~~PUBLICATIONS~~ ────────────────────────────────────────────────────── */
+
+.ap-publications {
+    margin: 1.5em 0;
+    overflow-x: auto;
+}
+
+.ap-pub-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.ap-pub-table th {
+    background: #f1f5f9;
+    padding: 0.6em 0.8em;
+    text-align: left;
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 2px solid #cbd5e0;
+    white-space: nowrap;
+}
+
+.ap-pub-table td {
+    padding: 0.55em 0.8em;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+    color: #2d3748;
+}
+
+.ap-pub-row:hover td {
+    background: #f7fafc;
+}
+
+.ap-pub-highlighted td {
+    background: #fffbeb;
+}
+
+.ap-pub-highlighted:hover td {
+    background: #fef3c7;
+}
+
+.ap-pub-year {
+    white-space: nowrap;
+    font-weight: 600;
+    color: #718096;
+    width: 4em;
+}
+
+.ap-pub-title a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.ap-pub-title a:hover {
+    text-decoration: underline;
+}
+
+.ap-pub-venue {
+    color: #718096;
+    font-style: italic;
+    min-width: 8em;
+}
+
+.ap-pub-cites-col,
+.ap-pub-cites {
+    text-align: center;
+    width: 6em;
+}
+
+/* ── ~~GITHUB_REPOS~~ ────────────────────────────────────────────────────── */
+
+.ap-repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.ap-repo-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1em 1.1em;
+    background: #fff;
+    transition: box-shadow 0.15s;
+}
+
+.ap-repo-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ap-repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.ap-repo-name {
+    font-weight: 600;
+    color: #2c5282;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.ap-repo-name:hover {
+    text-decoration: underline;
+}
+
+.ap-repo-stars {
+    font-size: 0.85em;
+    color: #b7791f;
+    white-space: nowrap;
+}
+
+.ap-repo-desc {
+    font-size: 0.85em;
+    color: #4a5568;
+    margin: 0.3em 0 0.6em;
+    line-height: 1.4;
+}
+
+.ap-repo-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.8em;
+    color: #718096;
+    margin-top: 0.4em;
+}
+
+.ap-lang-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ── ~~RESEARCH_LIST~~ ───────────────────────────────────────────────────── */
+
+.ap-research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25em;
+    margin: 1.5em 0;
+}
+
+.ap-research-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.1em 1.2em;
+    background: #fff;
+    transition: box-shadow 0.15s;
+}
+
+.ap-research-card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.ap-research-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.5em;
+    line-height: 1.35;
+}
+
+.ap-research-summary {
+    font-size: 0.87em;
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0 0 0.5em;
+}
+
+.ap-research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    margin-top: 0.8em;
+}
+
+.ap-link-btn {
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    border-radius: 5px;
+    border: 1px solid #90cdf4;
+    background: #ebf8ff;
+    color: #2b6cb0;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.12s;
+}
+
+.ap-link-btn:hover {
+    background: #bee3f8;
+    text-decoration: none;
+}
+
+/* ── ~~READING_LIST~~ ────────────────────────────────────────────────────── */
+
+.ap-reading-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.ap-reading-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    background: #fff;
+    transition: box-shadow 0.15s;
+}
+
+.ap-reading-card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.ap-reading-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.3em;
+    line-height: 1.35;
+}
+
+.ap-reading-title a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.ap-reading-title a:hover {
+    text-decoration: underline;
+}
+
+.ap-reading-date {
+    font-size: 0.78em;
+    color: #a0aec0;
+    margin-bottom: 0.4em;
+}
+
+.ap-reading-summary {
+    font-size: 0.87em;
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0 0 0.4em;
+}
+
+/* ── Responsive tweaks ───────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    .ap-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ap-repo-grid,
+    .ap-research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ap-pub-venue {
+        display: none;
+    }
+}
