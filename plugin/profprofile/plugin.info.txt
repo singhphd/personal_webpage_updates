@@ -1,0 +1,7 @@
+base    profprofile
+author  Jairo M. Valdivia
+email   jvaldivia@colorado.edu
+name    Professor Profile
+desc    Server-side academic profile plugin independent of GitHub. Stores and serves publications, citation stats, GitHub repos, research projects and reading list entirely within DokuWiki. Managed via a dedicated admin panel. Shortcodes: ~~PROF_HERO~~ ~~PUBLICATIONS~~ ~~SCHOLAR_STATS~~ ~~GITHUB_REPOS~~ ~~RESEARCH_LIST~~ ~~READING_LIST~~
+url     https://github.com/JValdivia23/personal_webpage_updates
+version 2026-04-04
