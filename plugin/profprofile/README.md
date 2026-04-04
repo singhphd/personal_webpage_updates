@@ -49,7 +49,7 @@ panel and stored locally inside DokuWiki.
 ## Managing Profile Data (Admin → Professor Profile)
 
 All profile content is managed through the dedicated admin page.  Navigate to
-**Admin → Professor Profile** and use the six tabs:
+**Admin → Professor Profile** and use the seven tabs:
 
 ### Profile tab
 Structured form with individual fields for:
@@ -153,6 +153,25 @@ JSON editor for reading articles (sorted by `date` descending):
 ```
 
 Saved as `<dw_data>/profprofile/reading.json`.
+
+### Sync / Import tab (new)
+Fetches live data from external APIs and saves it as local JSON.
+
+| Field | Description |
+|---|---|
+| **Semantic Scholar Author ID** | Numeric ID from your Semantic Scholar profile URL |
+| **GitHub Username** | Your GitHub handle |
+
+**Sync Publications & Stats** — calls the [Semantic Scholar API](https://api.semanticscholar.org/graph/v1)
+to download all papers and computes h-index, i10-index and citation counts, then
+writes `publications.json` and `stats.json`.
+
+**Sync GitHub Repos** — calls the GitHub API to fetch the top 5 non-forked public
+repos sorted by stars, then writes `github.json`.
+
+After syncing you can review and tweak the data on the other JSON-editor tabs.
+Sync settings (IDs / usernames) are saved in `sync_config.json` and are independent
+of the published data files.
 
 ---
 

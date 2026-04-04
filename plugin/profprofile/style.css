@@ -645,7 +645,84 @@
     margin: 1.5em 0;
 }
 
-/* ── Responsive tweaks ───────────────────────────────────────────────────── */
+/* ── Admin panel — sync tab ──────────────────────────────────────────────── */
+
+.pp-sync-intro {
+    font-size: 0.9em;
+    color: #4a5568;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 0.7em 1em;
+    margin-bottom: 1.25em;
+    line-height: 1.5;
+}
+
+.pp-sync-heading {
+    font-size: 1em;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 0.75em;
+    padding: 0;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.3em;
+}
+
+.pp-field-mid {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.4em 0.6em;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #2d3748;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.pp-field-mid:focus {
+    outline: none;
+    border-color: #90cdf4;
+    box-shadow: 0 0 0 2px rgba(144, 205, 244, 0.3);
+}
+
+.pp-field-hint {
+    font-size: 0.8em;
+    color: #718096;
+    margin: 0.3em 0 0;
+    line-height: 1.45;
+}
+
+.pp-field-hint code {
+    font-size: 0.9em;
+    background: #edf2f7;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+.pp-field-hint a {
+    color: #2b6cb0;
+}
+
+.pp-sync-ts {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.85em;
+    color: #718096;
+}
+
+.pp-btn-sync {
+    background: #ebf8ff;
+    border-color: #90cdf4;
+    color: #2b6cb0;
+    font-size: 0.9em;
+}
+
+.pp-btn-sync:hover {
+    background: #bee3f8;
+}
+
+
 
 @media (max-width: 600px) {
     .pp-hero {
