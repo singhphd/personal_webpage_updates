@@ -1,0 +1,774 @@
+/* =============================================================================
+   DokuWiki Plugin: profprofile
+   Styles for all shortcode components and the admin panel.
+   Class prefix: pp-  (to avoid conflicts with other plugins)
+   ============================================================================= */
+
+/* ── Shared utilities ────────────────────────────────────────────────────── */
+
+.pp-error {
+    padding: 0.75em 1em;
+    border-left: 4px solid #e74c3c;
+    background: #fdf3f2;
+    color: #c0392b;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin: 1em 0;
+}
+
+.pp-error a {
+    color: #c0392b;
+}
+
+.pp-meta {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.5em;
+}
+
+.pp-meta a {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* ── Tag badges ──────────────────────────────────────────────────────────── */
+
+.pp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+    margin-top: 0.6em;
+}
+
+.pp-tag {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border-radius: 12px;
+    background: #e8f0fe;
+    color: #2c5282;
+    font-size: 0.75em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* ── ~~PROF_HERO~~ ───────────────────────────────────────────────────────── */
+
+.pp-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em 2em;
+    align-items: flex-start;
+    margin: 1.5em 0 2em;
+}
+
+.pp-hero-photo {
+    flex-shrink: 0;
+}
+
+.pp-hero-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pp-hero-content {
+    flex: 1;
+    min-width: 200px;
+}
+
+.pp-hero-name {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.15em;
+    line-height: 1.2;
+    border: none;
+    padding: 0;
+}
+
+.pp-hero-title {
+    font-size: 1em;
+    color: #4a5568;
+    margin-bottom: 0.2em;
+}
+
+.pp-hero-institution {
+    font-size: 0.88em;
+    color: #718096;
+    margin-bottom: 0.8em;
+}
+
+.pp-hero-bio {
+    font-size: 0.95em;
+    color: #2d3748;
+    line-height: 1.65;
+    margin: 0.6em 0 1em;
+    max-width: 65ch;
+}
+
+.pp-hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.pp-hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.35em 0.9em;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.12s, border-color 0.12s;
+}
+
+.pp-link-email {
+    background: #ebf8ff;
+    border-color: #90cdf4;
+    color: #2b6cb0;
+}
+
+.pp-link-email:hover {
+    background: #bee3f8;
+    text-decoration: none;
+}
+
+.pp-link-github {
+    background: #f0fff4;
+    border-color: #9ae6b4;
+    color: #276749;
+}
+
+.pp-link-github:hover {
+    background: #c6f6d5;
+    text-decoration: none;
+}
+
+.pp-link-linkedin {
+    background: #e8f0fe;
+    border-color: #90b0f0;
+    color: #2c5282;
+}
+
+.pp-link-linkedin:hover {
+    background: #c3d7ff;
+    text-decoration: none;
+}
+
+.pp-link-scholar {
+    background: #fffbeb;
+    border-color: #f6d860;
+    color: #744210;
+}
+
+.pp-link-scholar:hover {
+    background: #fef3c7;
+    text-decoration: none;
+}
+
+.pp-link-cv {
+    background: #fff5f5;
+    border-color: #feb2b2;
+    color: #9b2c2c;
+}
+
+.pp-link-cv:hover {
+    background: #fed7d7;
+    text-decoration: none;
+}
+
+/* ── ~~SCHOLAR_STATS~~ ───────────────────────────────────────────────────── */
+
+.pp-scholar-stats {
+    margin: 1.5em 0;
+}
+
+.pp-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.75em;
+}
+
+.pp-stat-box {
+    padding: 1em 0.75em;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.pp-stat-box.pp-stat-highlight {
+    background: #ebf4ff;
+    border-color: #90cdf4;
+}
+
+.pp-stat-value {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.1;
+}
+
+.pp-stat-box.pp-stat-highlight .pp-stat-value {
+    color: #2b6cb0;
+}
+
+.pp-stat-label {
+    font-size: 0.75em;
+    color: #718096;
+    margin-top: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ── ~~PUBLICATIONS~~ ────────────────────────────────────────────────────── */
+
+.pp-publications {
+    margin: 1.5em 0;
+    overflow-x: auto;
+}
+
+.pp-pub-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.pp-pub-table th {
+    background: #f1f5f9;
+    padding: 0.6em 0.8em;
+    text-align: left;
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 2px solid #cbd5e0;
+    white-space: nowrap;
+}
+
+.pp-pub-table td {
+    padding: 0.55em 0.8em;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+    color: #2d3748;
+}
+
+.pp-pub-row:hover td {
+    background: #f7fafc;
+}
+
+.pp-pub-highlighted td {
+    background: #fffbeb;
+}
+
+.pp-pub-highlighted:hover td {
+    background: #fef3c7;
+}
+
+.pp-pub-year {
+    white-space: nowrap;
+    font-weight: 600;
+    color: #718096;
+    width: 4em;
+}
+
+.pp-pub-title a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.pp-pub-title a:hover {
+    text-decoration: underline;
+}
+
+.pp-pub-venue {
+    color: #718096;
+    font-style: italic;
+    min-width: 8em;
+}
+
+.pp-pub-cites-col,
+.pp-pub-cites {
+    text-align: center;
+    width: 6em;
+}
+
+/* ── ~~GITHUB_REPOS~~ ────────────────────────────────────────────────────── */
+
+.pp-repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.pp-repo-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1em 1.1em;
+    background: #fff;
+    transition: box-shadow 0.15s;
+}
+
+.pp-repo-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.pp-repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.pp-repo-name {
+    font-weight: 600;
+    color: #2c5282;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.pp-repo-name:hover {
+    text-decoration: underline;
+}
+
+.pp-repo-stars {
+    font-size: 0.85em;
+    color: #b7791f;
+    white-space: nowrap;
+}
+
+.pp-repo-desc {
+    font-size: 0.85em;
+    color: #4a5568;
+    margin: 0.3em 0 0.6em;
+    line-height: 1.4;
+}
+
+.pp-repo-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.8em;
+    color: #718096;
+    margin-top: 0.4em;
+}
+
+.pp-lang-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ── ~~RESEARCH_LIST~~ ───────────────────────────────────────────────────── */
+
+.pp-research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25em;
+    margin: 1.5em 0;
+}
+
+.pp-research-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.1em 1.2em;
+    background: #fff;
+    transition: box-shadow 0.15s;
+}
+
+.pp-research-card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.pp-research-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.5em;
+    line-height: 1.35;
+}
+
+.pp-research-summary {
+    font-size: 0.87em;
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0 0 0.5em;
+}
+
+.pp-research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    margin-top: 0.8em;
+}
+
+.pp-link-btn {
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    border-radius: 5px;
+    border: 1px solid #90cdf4;
+    background: #ebf8ff;
+    color: #2b6cb0;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.12s;
+}
+
+.pp-link-btn:hover {
+    background: #bee3f8;
+    text-decoration: none;
+}
+
+/* ── ~~READING_LIST~~ ────────────────────────────────────────────────────── */
+
+.pp-reading-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.pp-reading-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    background: #fff;
+    transition: box-shadow 0.15s;
+}
+
+.pp-reading-card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+}
+
+.pp-reading-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.3em;
+    line-height: 1.35;
+}
+
+.pp-reading-title a {
+    color: #2c5282;
+    text-decoration: none;
+}
+
+.pp-reading-title a:hover {
+    text-decoration: underline;
+}
+
+.pp-reading-date {
+    font-size: 0.78em;
+    color: #a0aec0;
+    margin-bottom: 0.4em;
+}
+
+.pp-reading-summary {
+    font-size: 0.87em;
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0 0 0.4em;
+}
+
+/* ── Admin panel — tab navigation ────────────────────────────────────────── */
+
+.pp-admin-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    margin-bottom: 1.25em;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0;
+}
+
+.pp-tab {
+    display: inline-block;
+    padding: 0.5em 1.1em;
+    border-radius: 6px 6px 0 0;
+    border: 1px solid transparent;
+    border-bottom: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4a5568;
+    background: #f7fafc;
+    transition: background 0.1s, color 0.1s;
+    position: relative;
+    bottom: -2px;
+}
+
+.pp-tab:hover {
+    background: #edf2f7;
+    text-decoration: none;
+    color: #2d3748;
+}
+
+.pp-tab.pp-tab-active {
+    background: #fff;
+    border-color: #e2e8f0;
+    border-bottom-color: #fff;
+    color: #2b6cb0;
+    font-weight: 600;
+}
+
+/* ── Admin panel — content area ──────────────────────────────────────────── */
+
+.pp-admin-content {
+    padding-top: 0.5em;
+}
+
+.pp-admin-msg {
+    margin-bottom: 1em;
+    padding: 0.6em 1em;
+    border-radius: 4px;
+}
+
+/* ── Admin panel — profile form ──────────────────────────────────────────── */
+
+.pp-profile-form {
+    max-width: 720px;
+}
+
+.pp-form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+.pp-form-table th {
+    width: 220px;
+    padding: 0.5em 1em 0.5em 0;
+    vertical-align: top;
+    text-align: left;
+    font-weight: 500;
+    color: #4a5568;
+    white-space: nowrap;
+}
+
+.pp-form-table td {
+    padding: 0.4em 0;
+    vertical-align: top;
+}
+
+.pp-field-wide {
+    width: 100%;
+    max-width: 460px;
+    padding: 0.4em 0.6em;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: inherit;
+    box-sizing: border-box;
+    color: #2d3748;
+    background: #fff;
+}
+
+.pp-field-wide:focus {
+    outline: none;
+    border-color: #90cdf4;
+    box-shadow: 0 0 0 2px rgba(144, 205, 244, 0.3);
+}
+
+.pp-form-actions {
+    margin-top: 0.75em;
+}
+
+/* ── Admin panel — JSON editor ───────────────────────────────────────────── */
+
+.pp-json-hint {
+    font-size: 0.85em;
+    color: #4a5568;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 0.6em 0.9em;
+    margin-bottom: 0.75em;
+}
+
+.pp-json-hint code {
+    font-size: 0.95em;
+    background: #edf2f7;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+.pp-json-editor {
+    width: 100%;
+    max-width: 860px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.82em;
+    line-height: 1.55;
+    padding: 0.75em;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    background: #1a202c;
+    color: #e2e8f0;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.pp-json-editor:focus {
+    outline: none;
+    border-color: #90cdf4;
+    box-shadow: 0 0 0 2px rgba(144, 205, 244, 0.3);
+}
+
+/* ── Admin panel — usage hint ────────────────────────────────────────────── */
+
+.pp-usage-hint {
+    font-size: 0.85em;
+    color: #4a5568;
+    margin: 0.6em 0 1em;
+}
+
+.pp-usage-hint code {
+    font-size: 0.95em;
+    background: #edf2f7;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.pp-divider {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 1.5em 0;
+}
+
+/* ── Admin panel — sync tab ──────────────────────────────────────────────── */
+
+.pp-sync-intro {
+    font-size: 0.9em;
+    color: #4a5568;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 0.7em 1em;
+    margin-bottom: 1.25em;
+    line-height: 1.5;
+}
+
+.pp-sync-heading {
+    font-size: 1em;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 0.75em;
+    padding: 0;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.3em;
+}
+
+.pp-field-mid {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.4em 0.6em;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #2d3748;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.pp-field-mid:focus {
+    outline: none;
+    border-color: #90cdf4;
+    box-shadow: 0 0 0 2px rgba(144, 205, 244, 0.3);
+}
+
+.pp-field-hint {
+    font-size: 0.8em;
+    color: #718096;
+    margin: 0.3em 0 0;
+    line-height: 1.45;
+}
+
+.pp-field-hint code {
+    font-size: 0.9em;
+    background: #edf2f7;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+.pp-field-hint a {
+    color: #2b6cb0;
+}
+
+.pp-sync-ts {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.85em;
+    color: #718096;
+}
+
+.pp-btn-sync {
+    background: #ebf8ff;
+    border-color: #90cdf4;
+    color: #2b6cb0;
+    font-size: 0.9em;
+}
+
+.pp-btn-sync:hover {
+    background: #bee3f8;
+}
+
+
+
+@media (max-width: 600px) {
+    .pp-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pp-hero-links {
+        justify-content: center;
+    }
+
+    .pp-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pp-repo-grid,
+    .pp-research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pp-pub-venue {
+        display: none;
+    }
+
+    .pp-admin-tabs {
+        gap: 0;
+    }
+
+    .pp-tab {
+        padding: 0.45em 0.7em;
+        font-size: 0.82em;
+    }
+
+    .pp-form-table th {
+        display: block;
+        width: auto;
+        padding-bottom: 0.2em;
+    }
+
+    .pp-form-table td {
+        display: block;
+        padding-bottom: 0.6em;
+    }
+
+    .pp-field-wide {
+        max-width: 100%;
+    }
+}
